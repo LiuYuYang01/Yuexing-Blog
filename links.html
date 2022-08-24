@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入icon页面图标 -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!-- 引入字体图标 -->
+    <link rel="stylesheet" href="./lib/font/iconfont.css">
+    <!-- 引入页面 CSS文件 -->
+    <link rel="stylesheet" href="./css/links.css">
+    <!-- 引入页面 初始化样式 -->
+    <link rel="stylesheet" href="./css/init.css">
+    <!-- 引入页面 公共样式 -->
+    <link rel="stylesheet" href="./css/public.css">
+    <!-- 引入页面 响应式样式 -->
+    <link rel="stylesheet" href="./css/Responsive.css">
+    <!-- 引入轮播图 -->
+    <link rel="stylesheet" href="./lib/swiper/swiper-bundle.min.css" />
+    <title>Yuexing - 人脉圈</title>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <div class="nav">
+        <div class="w">
+            <!-- 一级导航 -->
+            <ul class="one">
+                <!-- 菜单 -->
+                <li class="item" id="menu">
+                    <a href="javascript:;" style="display: inline-block;">
+                        <i class="iconfont icon-caidan1"></i>
+                    </a>
+                </li>
+
+                <!-- logo -->
+                <li class="item1">
+                    <a href="./index.html">
+                        <img src="./image/logo2.png" alt="" id="logo">
+                    </a>
+                </li>
+
+                <li class="item1">
+                    <a href="./index.html">
+                        <i class="iconfont icon-shouye"></i>首页
+                    </a>
+                </li>
+
+                <li class="item1">
+                    <a href="./category.html">
+                        <i class="iconfont icon-bijiben1"></i>开发记录
+                    </a>
+                </li>
+
+                <li class="item1">
+                    <a href="./index.html">
+                        <i class="iconfont icon-yuandaima"></i>大前端
+                    </a>
+
+                    <!-- 二级导航 -->
+                    <ul class="two" style="display: none;">
+                        <li>
+                            <a href="javascript:;">HTML5</a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:;">CSS3</a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:;">JavaScript</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="item1">
+                    <a href="./index.html">
+                        <i class="iconfont icon-zuzhijiagou1"></i>框架
+                    </a>
+
+                    <!-- 二级导航 -->
+                    <ul class="two" style="display: none;">
+                        <li>
+                            <a href="javascript:;">Vue</a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:;">React</a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:;">Angular</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="item1">
+                    <a href="javascript:;">
+                        <i class="iconfont icon-zhuti1"></i>扩展
+                    </a>
+
+                    <ul class="two" style="display: none;">
+                        <li>
+                            <a href="./links.html"><i class="iconfont icon-quanzi1"></i>人脉圈</a>
+                        </li>
+
+                        <li>
+                            <a href="./circle.html"><i class="iconfont icon-pengyouquan1"></i>朋友圈</a>
+                        </li>
+
+                        <li>
+                            <a href="./bigData.html"><i class="iconfont icon-dashuju2"></i>大数据</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- 功能栏 -->
+                <li class="function">
+                    <ol>
+                        <!-- 白天昼夜切换 -->
+                        <li id="HighlightToggle">
+                            <img src="./image/taiyang.png" alt="">
+                        </li>
+
+                        <li>
+                            <a href="javascript:;">
+                                <i class="iconfont icon-sousuo1"></i>
+                            </a>
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 移动端的侧边导航栏 -->
+    <div class="mNav">
+        <!-- 头像 -->
+        <div class="user">
+            <img src="./image/user.png" alt="">
+            <span>Yuexing</span>
+            <p>不断改善成为最佳!</p>
+        </div>
+
+        <!-- 导航栏 -->
+        <ul>
+            <li class="item">
+                <a href="./index.html">
+                    <i class="iconfont icon-shouye"></i>首页
+                </a>
+            </li>
+
+            <li class="item">
+                <a href="./category.html">
+                    <i class="iconfont icon-bijiben1"></i>开发记录
+                </a>
+            </li>
+
+            <li class="item">
+                <a href="javascript:;" id="twoNav">
+                    <i class="iconfont icon-yuandaima"></i>大前端
+                </a>
+
+                <!-- 二级导航 -->
+                <ul class="two">
+                    <li>
+                        <a href="javascript:;">HTML5</a>
+                    </li>
+
+                    <li>
+                        <a href="javascript:;">CSS3</a>
+                    </li>
+
+                    <li>
+                        <a href="javascript:;">JavaScript</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="item">
+                <a href="javascript:;" id="twoNav">
+                    <i class="iconfont icon-zuzhijiagou1"></i>框架
+                </a>
+
+                <!-- 二级导航 -->
+                <ul class="two">
+                    <li>
+                        <a href="javascript:;">Vue</a>
+                    </li>
+
+                    <li>
+                        <a href="javascript:;">React</a>
+                    </li>
+
+                    <li>
+                        <a href="javascript:;">Angular</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="item">
+                <a href="javascript:;" id="twoNav">
+                    <i class="iconfont icon-zhuti1"></i>扩展
+                </a>
+
+                <ul class="two">
+                    <li>
+                        <a href="./links.html">
+                            <i class="iconfont icon-quanzi1"></i>人脉圈
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./circle.html">
+                            <i class="iconfont icon-pengyouquan1"></i>朋友圈
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./bigData.html"><i class="iconfont icon-dashuju2"></i>大数据</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 遮罩层 -->
+    <div class="mask"></div>
+
+    <!-- 轮播图 -->
+    <div class="banner">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="text">
+                        <h3>
+                            <i class="iconfont icon-quanzi1"></i>人脉圈
+                        </h3>
+                        <p>Network Circle!</p>
+                    </div>
+
+                    <img src="http://139.196.43.147/gallery/t01d6f5fd3610da0a08.jpg" alt="">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- 引入swiper轮播图插件 -->
+        <script src="./lib/swiper/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                pagination: {
+                    el: ".swiper-pagination",
+                    dynamicBullets: true
+                },
+                autoplay: {
+                    delay: 5000
+                },
+                loop: false,
+            });
+        </script>
+
+        <!-- 波纹 -->
+        <div class="ripple">
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave"
+                        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                </g>
+            </svg>
+        </div>
+    </div>
+
+    <!-- 主体内容 -->
+    <div class="main main_links">
+        <div class="w">
+            <!-- 人脉圈 -->
+            <div class="contacts">
+                <!-- 小圆点 -->
+                <div class="dots">
+                    <ol>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ol>
+                </div>
+
+                <!-- 列表项 -->
+                <div class="contactsList">
+                    <div class="item">
+                        <a href="javascript:;">
+                            <div class="logo">
+                                <img src="https://img1.baidu.com/it/u=2132056018,1796515836&fm=253&fmt=auto&app=120&f=JPEG?w=800&h=800"
+                                    alt="">
+                            </div>
+
+                            <div class="text">
+                                <h4>GitHub</h4>
+                                <p>一起更好地构建软件。</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item">
+                        <a href="javascript:;">
+                            <div class="logo">
+                                <img src="https://img1.baidu.com/it/u=943390663,3323925491&fm=253&fmt=auto&app=120&f=JPEG?w=256&h=256"
+                                    alt="">
+                            </div>
+
+                            <div class="text">
+                                <h4>掘金</h4>
+                                <p>代码不止,掘金不停</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item">
+                        <a href="javascript:;">
+                            <div class="logo">
+                                <img src="https://img0.baidu.com/it/u=4141042981,2904907595&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"
+                                    alt="">
+                            </div>
+
+                            <div class="text">
+                                <h4>CSDN</h4>
+                                <p>专业开发者社区</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item">
+                        <a href="javascript:;">
+                            <div class="logo">
+                                <img src="https://img0.baidu.com/it/u=2836525371,1296304798&fm=253&fmt=auto&app=138&f=PNG?w=500&h=500"
+                                    alt="">
+                            </div>
+
+                            <div class="text">
+                                <h4>博客园</h4>
+                                <p>开发者的网上家园</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item">
+                        <a href="javascript:;">
+                            <div class="logo">
+                                <img src="https://img2.baidu.com/it/u=2146760600,3701578991&fm=253&fmt=auto&app=138&f=PNG?w=250&h=250"
+                                    alt="">
+                            </div>
+
+                            <div class="text">
+                                <h4>思否</h4>
+                                <p>中国领先的开发者技术社区</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item">
+                        <a href="javascript:;">
+                            <div class="logo">
+                                <img src="https://api.iowen.cn/favicon/time.geekbang.org.png" alt="">
+                            </div>
+
+                            <div class="text">
+                                <h4>极客时间</h4>
+                                <p>轻松学习，高效学习</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item">
+                        <a href="javascript:;">
+                            <div class="logo">
+                                <img src="https://api.iowen.cn/favicon/developer.mozilla.org.png" alt="">
+                            </div>
+
+                            <div class="text">
+                                <h4>MDN</h4>
+                                <p>Web Docs</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item">
+                        <a href="javascript:;">
+                            <div class="logo">
+                                <img src="./image/user.png" alt="">
+                            </div>
+
+                            <div class="text">
+                                <h4>虚伪以待</h4>
+                                <p>......</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 描述 -->
+                <div class="describe">
+                    <div class="article_Info">
+                        <h2>关于申请友链条件</h2>
+                        <p>
+                            🍅不接受新站链接（3个月以内）<br>
+                            🎄先友后链，申请前请先提前做好本站友情链接<br>
+                            🌈贵站在百度、Google各大搜索引擎中能够正常收录（百度收录不少于100）<br>
+                            💖稳定更新，每月至少发布1篇文章<br>
+                            🍧凡内容污秽、暴力的、广告挂马的、违背社会主义核心价值观的勿扰<br>
+                            🎯申请方式请在下方留言
+                        </p>
+
+                        <br>
+
+                        <h2>关于申请格式</h2>
+                        <p>本站基本信息如下，申请时请也按照相同格式：</p>
+
+                        <!-- 标题卡 -->
+                        <div class="articleTitle_blue">
+                            <h4>基本信息格式</h4>
+                            <p>
+                                名称：Yuexing <br>
+                                链接：<a href="javascript:;">https://liuyuyang.net</a> <br>
+                                描述：记录开发日常 <br>
+                                头像：<a href="javascript:;">https://liuyuyang.net/avatar.jpg</a> <br>
+                            </p>
+                        </div>
+
+                        <br>
+
+                        <h2>无法访问或单方面取消</h2>
+                        <p>不定时排查，无法访问或单方面取消，将会移除链接，恕不告知🧐</p>
+                    </div>
+                </div>
+
+                <!-- 留言板 -->
+                <div class="article">
+                    <div class="comment">
+                        <!-- 标题 -->
+                        <div class="title">
+                            <i class="iconfont icon-pinglun"></i>
+                            <span>留言板</span>
+                        </div>
+                        <hr>
+
+                        <!-- 表情包 -->
+                        <div class="phiz">
+                            <img class="tbbq" draggable="false" title="：滑稽：" num="0" src="./image/phiz/face_0.png">
+                            <img class="tbbq" title="：喷：" num="1" src="./image/phiz/face_1.png">
+                            <img class="tbbq" title="：喜欢：" num="2" src="./image/phiz/face_2.png">
+                            <img class="tbbq" title="：阴险：" num="3" src="./image/phiz/face_3.png">
+                            <img class="tbbq" title="：怒：" num="4" src="./image/phiz/face_4.png">
+                            <img class="tbbq" title="：笑眼：" num="5" src="./image/phiz/face_5.png">
+                            <img class="tbbq" title="：黑线：" num="6" src="./image/phiz/face_6.png">
+                            <img class="tbbq" title="：鼓掌：" num="7" src="./image/phiz/face_7.png">
+                            <img class="tbbq" title="：乖：" num="8" src="./image/phiz/face_8.png">
+                            <img class="tbbq" title="：汗：" num="9" src="./image/phiz/face_9.png">
+                            <img class="tbbq" title="：惊哭：" num="10" src="./image/phiz/face_10.png">
+                            <img class="tbbq" title="：酷：" num="11" src="./image/phiz/face_11.png">
+                            <img class="tbbq" title="：狂汗：" num="12" src="./image/phiz/face_12.png">
+                            <img class="tbbq" title="：问号：" num="13" src="./image/phiz/face_13.png">
+                            <img class="tbbq" title="：真棒：" num="14" src="./image/phiz/face_14.png">
+                            <img class="tbbq" title="：不高兴：" num="15" src="./image/phiz/face_15.png">
+                            <img class="tbbq" title="：大哭：" num="16" src="./image/phiz/face_16.png">
+                            <img class="tbbq" title="：思考：" num="17" src="./image/phiz/face_17.png">
+                        </div>
+
+                        <!-- 评论区 -->
+                        <div class="comment_box">
+                            <textarea name="comment_box" placeholder="来发一针见血的评论吧!"></textarea>
+                        </div>
+
+                        <!-- 评论者信息 -->
+                        <div class="comment_info">
+                            <img src="./image/user.png" alt="">
+                            <input type="text" placeholder="QQ号可获取头像和昵称">
+                            <input type="text" placeholder="昵称*" disabled>
+                            <a href="javascript:;">提交评论</a>
+                        </div>
+
+                        <!-- 华丽的分割线 -->
+                        <div class="hr">
+                            <div></div>
+                            <!-- 评论区标题 -->
+                            <div class="title_hr">
+                                <i class="iconfont icon-pinglun"></i>
+                                <span>留言区</span>
+                            </div>
+                        </div>
+
+                        <!-- 评论内容 -->
+                        <div class="comment_content">
+                            <ul>
+                                <li>
+                                    <!-- 评论者信息 -->
+                                    <div class="comment_user">
+                                        <img src="https://q2.qlogo.cn/headimg_dl?dst_uin=3311118881&spec=100" alt="">
+                                        <div>
+                                            <span>方法总比困难多</span>
+                                            <span>2022-06-06 15:28</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- 评论内容 -->
+                                    <div class="comment_main">
+                                        名称：Yuexing<br>
+                                        链接：https://liuyuyang.net<br>
+                                        描述：记录开发日常<br>
+                                        头像：https://liuyuyang.net/avatar.jpg
+                                    </div>
+
+                                    <!-- 二级评论 -->
+                                    <div class="comment_user1">
+                                        <!-- 评论者信息 -->
+                                        <div class="comment_user">
+                                            <img src="./image/user.png" alt="">
+                                            <div>
+                                                <span>Yuexing</span>
+                                                <span>2022-06-11 15:28</span>
+                                            </div>
+                                        </div>
+
+                                        <!-- 评论内容 -->
+                                        <div class="comment_main">
+                                            <a href="javascript:;">@方法总比困难多</a>
+                                            <span>已添加</span>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <!-- 评论者信息 -->
+                                    <div class="comment_user">
+                                        <img src="https://q2.qlogo.cn/headimg_dl?dst_uin=3118614536&spec=100" alt="">
+                                        <div>
+                                            <span>鱼子酱</span>
+                                            <span>2022-06-06 15:28</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- 评论内容 -->
+                                    <div class="comment_main">
+                                        名称：掘金<br>
+                                        链接：https://juejin.cn/<br>
+                                        描述：记录开发日常<br>
+                                        头像：https://juejin.cn/avatar.jpg
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <!-- 评论者信息 -->
+                                    <div class="comment_user">
+                                        <img src="https://q2.qlogo.cn/headimg_dl?dst_uin=2518848232&spec=100" alt="">
+                                        <div>
+                                            <span>为不凡突破极限</span>
+                                            <span>2022-06-09 11:25</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- 评论内容 -->
+                                    <div class="comment_main">
+                                        名称：CSDN<br>
+                                        链接：https://blog.csdn.net/<br>
+                                        描述：记录开发日常<br>
+                                        头像：https://blog.csdn.net/avatar.jpg
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <!-- 评论者信息 -->
+                                    <div class="comment_user">
+                                        <img src="https://q2.qlogo.cn/headimg_dl?dst_uin=3311118881&spec=100" alt="">
+                                        <div>
+                                            <span>方法总比困难多</span>
+                                            <span>2022-06-06 15:28</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- 评论内容 -->
+                                    <div class="comment_main">
+                                        名称：博客园<br>
+                                        链接：https://www.cnblogs.com/<br>
+                                        描述：记录开发日常<br>
+                                        头像：https://www.cnblogs.com/avatar.jpg
+                                    </div>
+
+                                    <!-- 二级评论 -->
+                                    <div class="comment_user1">
+                                        <!-- 评论者信息 -->
+                                        <div class="comment_user">
+                                            <img src="./image/user.png" alt="">
+                                            <div>
+                                                <span>Yuexing</span>
+                                                <span>2022-06-11 15:28</span>
+                                            </div>
+                                        </div>
+
+                                        <!-- 评论内容 -->
+                                        <div class="comment_main">
+                                            <a href="javascript:;">@方法总比困难多</a>
+                                            <span>已加!</span>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <!-- 评论者信息 -->
+                                    <div class="comment_user">
+                                        <img src="https://q2.qlogo.cn/headimg_dl?dst_uin=3118614536&spec=100" alt="">
+                                        <div>
+                                            <span>鱼子酱</span>
+                                            <span>2022-06-06 15:28</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- 评论内容 -->
+                                    <div class="comment_main">
+                                        名称：掘金<br>
+                                        链接：https://juejin.cn/<br>
+                                        描述：记录开发日常<br>
+                                        头像：https://juejin.cn/avatar.jpg
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <!-- 评论者信息 -->
+                                    <div class="comment_user">
+                                        <img src="https://q2.qlogo.cn/headimg_dl?dst_uin=2518848232&spec=100" alt="">
+                                        <div>
+                                            <span>为不凡突破极限</span>
+                                            <span>2022-06-09 11:25</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- 评论内容 -->
+                                    <div class="comment_main">
+                                        名称：掘金<br>
+                                        链接：https://juejin.cn/<br>
+                                        描述：记录开发日常<br>
+                                        头像：https://juejin.cn/avatar.jpg
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- 分页 -->
+                        <div class="pagination">
+                            <a href="javascript:;">‹‹</a>
+                            <a href="javascript:;">‹</a>
+                            <a href="javascript:;" class="paginationAction">1</a>
+                            <a href="javascript:;">2</a>
+                            <a href="javascript:;">3</a>
+                            <a href="javascript:;">4</a>
+                            <a href="javascript:;">5</a>
+                            <a href="javascript:;">6</a>
+                            <a href="javascript:;">››</a>
+                        </div>
+
+                        <!-- 加载列表 -->
+                        <div class="loadList">
+                            <i class="iconfont icon-loadm"></i>
+                            <span>加载更多</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 功能模块 -->
+            <div class="function">
+                <div class="sticky">
+                    <!-- 作者详情 -->
+                    <div class="author">
+                        <!-- 背景图片 -->
+                        <div class="author-bg">
+                            <!-- 头像 -->
+                            <div class="avatar">
+                                <img src="./image/user.png" alt="">
+                            </div>
+                        </div>
+
+                        <!-- 作者信息 -->
+                        <div class="text">
+                            <h4>
+                                <a href="javascript:;">悦兴</a>
+                                <div class="medal"></div>
+                            </h4>
+                            <p>也许，将会是最好用的博客管理系统</p>
+                        </div>
+
+                        <!-- 功能 -->
+                        <div class="fun">
+                            <!-- 发布文章 -->
+                            <div class="login"><a href="javascript:;">登录</a></div>
+
+                            <span></span>
+
+                            <!-- 登录后台 -->
+                            <div class="register"><a href="javascript:;">注册</a></div>
+                        </div>
+                    </div>
+
+                    <!-- 随机文章 -->
+                    <div class="containerA">
+                        <!-- 标题 -->
+                        <div class="title">
+                            <h3><i class="iconfont icon-suijishushengcheng"></i> 随机文章</h3>
+                            <!-- 小圆点 -->
+                            <div class="dots">
+                                <ol>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <!-- 随机文章 -->
+                        <div class="random_Alist">
+                            <ul>
+                                <li>
+                                    <i class="iconfont icon-xiangyoujiantou"></i>
+                                    <a href="javascript:;">2022 年的 React 生态</a>
+                                </li>
+
+                                <li>
+                                    <i class="iconfont icon-xiangyoujiantou"></i>
+                                    <a href="javascript:;">字节跳动自研高性能微服务框架 Kitex 的演进之旅</a>
+                                </li>
+
+                                <li>
+                                    <i class="iconfont icon-xiangyoujiantou"></i>
+                                    <a href="javascript:;">两年前端，广州求职，要价 14k，依我说，小伙子可以多要点，涉及组件建设、工程化以及丰富的项目经验</a>
+                                </li>
+
+                                <li>
+                                    <i class="iconfont icon-xiangyoujiantou"></i>
+                                    <a href="javascript:;">解放双手！推荐一款阿里开源的低代码工具，YYDS！</a>
+                                </li>
+
+                                <li>
+                                    <i class="iconfont icon-xiangyoujiantou"></i>
+                                    <a href="javascript:;">Web3.0来了，花呗借呗前端团队开源的Web图形引擎会成为元宇宙的技术支撑吗？</a>
+                                </li>
+
+                                <li>
+                                    <i class="iconfont icon-xiangyoujiantou"></i>
+                                    <a href="javascript:;">超越 Nginx！号称下一代 Web 服务器，用起来够优雅！</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 标签栏 -->
+                    <div class="containerA">
+                        <!-- 标题 -->
+                        <div class="title">
+                            <h3><i class="iconfont icon-tuya_huabanfuben"></i> 标签栏</h3>
+                            <!-- 小圆点 -->
+                            <div class="dots">
+                                <ol>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <!-- 标签 -->
+                        <div class="containerA_Tags">
+                            <a href="javascript:;">HTML</a>
+                            <a href="javascript:;">CSS</a>
+                            <a href="javascript:;">Vue</a>
+                            <a href="javascript:;">jQuery</a>
+                            <a href="javascript:;">Vue</a>
+                            <a href="javascript:;">React</a>
+                            <a href="javascript:;">Angular</a>
+                            <a href="javascript:;">less</a>
+                            <a href="javascript:;">Node.js</a>
+                            <a href="javascript:;">Bootstrap</a>
+                            <a href="javascript:;">Element</a>
+                            <a href="javascript:;">scss</a>
+                            <a href="javascript:;">uni-app</a>
+                            <a href="javascript:;">Foundation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部 -->
+    <div class="footer">
+        <div class="w">
+            <!-- 站点信息 -->
+            <div class="Web_info">
+                <!-- 站点名称 -->
+                <div class="Web_name">
+                    <h1><a href="javascript:;">Yuexing</a></h1>
+                    <div class="dian"></div>
+                </div>
+
+                <!-- 站点描述 -->
+                <div class="Web_describe">
+                    <p>© 2022 <a href="javascript:;">Yuexing</a> - 也许，将会是最好用的博客管理系统！</p>
+                    <p>Perhaps, it will be the best blog management system!</p>
+                </div>
+            </div>
+
+            <!-- ICP备案号 -->
+            <div class="ICP">
+                <a href="https://beian.miit.gov.cn/#/Integrated/index"><i
+                        class="iconfont icon-icp-license"></i>豫ICP备2020031040号-1</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 侧边工具栏 -->
+    <div class="tool">
+        <div class="item">
+            <a href="javascript:;">
+                <i class="iconfont icon-zhuti_yifu_o"></i>
+            </a>
+        </div>
+
+        <div class="item">
+            <a href="javascript:;" id="returnTop">
+                <i class="iconfont icon-fanhuidingbu1"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- 引入公共 JavaScript文件 -->
+    <script src="./js/public.js"></script>
+    <!-- 引入页面JavaScript文件 -->
+    <script src="./js/links.js"></script>
+</body>
+
+</html>

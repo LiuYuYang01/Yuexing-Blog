@@ -1,0 +1,62 @@
+.main .w {
+    justify-content: center !important;
+}
+
+.main .list{
+    width: 1000px !important;
+}
+
+.links{
+    width: 1000px !important;
+}
+
+/* 焦点图 */
+.banner {
+    position: relative;
+    height: 500px;
+    background: url(http://139.196.43.147/gallery/t01d6f5fd3610da0a08.jpg) no-repeat center;
+    background-size: cover;
+}
+
+/* 渐变效果 */
+.banner::after {
+    content: "";
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to top, rgba(var(--Yuexing-banner-linear)), transparent);
+}
+
+.banner .cate_info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    animation: bannerMove 0.6s  forwards;
+}
+
+.banner .cate_info .cate i,
+.banner .cate_info .cate span {
+    font-size: 50px;
+    text-shadow: 2px 2px 5px #333;
+}
+
+.banner .cate_info p{
+    font-size: 15px;
+    margin-top: 15px;
+    text-shadow: 2px 2px 5px #333;
+}
+
+@keyframes bannerMove{
+    0%{
+        top: -50%;
+    }
+
+    100%{
+        top: 50%;
+    }
+}

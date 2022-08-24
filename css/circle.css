@@ -1,0 +1,151 @@
+.main>.w>.list {
+    overflow: visible !important;
+    padding: 0 !important;
+    width: auto !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.dots ol {
+    margin-top: 10px !important;
+}
+
+/* 朋友圈 */
+/* 列表 */
+.main .circle .list {
+    width: 100%;
+    padding: 15px 25px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    background-color: var(--Yuexing-bg) !important;
+    box-shadow: 0 1px 3px rgb(26 26 26 / 20%) !important;
+    transition: all 0.5s;
+}
+
+.main .circle .list .info {
+    margin: 20px 0;
+}
+
+.main .circle .list>.title {
+    display: flex;
+    align-items: center;
+}
+
+/* 发布者头像 */
+.main .circle .list>.title img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* 发布者名称 */
+.main .circle .list>.title h3 {
+    margin-left: 10px;
+    color: var(--Yuexing-a);
+    transition: all 0.5s;
+}
+
+/* 内容 */
+.main .circle .list .listInfo {
+    color: #333;
+}
+
+.main .circle .list .listInfo p {
+    margin-bottom: 10px;
+    line-height: 1.6em;
+    color: var(--Yuexing-article);
+    font-size: 16px;
+    transition: all 0.5s;
+}
+
+/* 图片 */
+.main .circle .list .listImg {
+    width: 50%;
+}
+
+.main .circle .list .listImg img {
+    width: 100%;
+    margin-bottom: 3px;
+}
+
+/* 底部 */
+.main .circle .list .listFootel {
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+/* 发布时间 */
+.main .circle .list .listFootel>span {
+    color: var(--Yuexing-title);
+    font-size: 12px;
+    font-family: "黑体";
+    font-weight: 700;
+    transition: all 0.5s;
+}
+
+/* 点赞 */
+.main .circle .list .listFootel .fn {
+    float: right;
+}
+
+.main .circle .list .listFootel .fn a{
+    color: var(--Yuexing-a);
+}
+
+
+/* 评论 */
+.main .circle .list .commentBox {
+    display: none;
+}
+
+.main .circle .list .comment {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 120px;
+    padding: 5px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+.main .circle .list .comment:hover {
+    border: 1px solid #539dfd;
+}
+
+.main .circle .list .comment textarea {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border: 0;
+    border-radius: 3px;
+    background: #f2f7ff;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 1.5em;
+    resize: none;
+}
+
+/* 发布按钮 */
+.main .circle .list .comment a {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    background-color: #539dfd;
+    text-align: center;
+}
+
+.main .circle .list .comment a>i {
+    color: #fff;
+}
+
+/* 响应式 */
+@media screen and (max-width: 530px){
+    .main .circle .list .listImg{
+        width: 100%;
+    }
+}

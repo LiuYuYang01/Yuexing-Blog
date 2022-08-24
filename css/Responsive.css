@@ -1,0 +1,489 @@
+/* 调整页面主体内容 */
+@media screen and (max-width: 1260px) {
+    .main {
+        margin: 10px 20px;
+    }
+
+    .main>.w {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .main>.w>.list {
+        width: 800px;
+    }
+
+    .main>.w>.list>ul li .right {
+        width: 0;
+    }
+
+    .main>.w>.list>ul li .right h2 {
+        width: auto;
+    }
+
+    .main>.w>.list>ul li .right h2 a {
+        width: 100%;
+    }
+
+    .main .function {
+        flex: 0;
+    }
+
+    .main .function .author {
+        width: 280px;
+    }
+
+    /* 友情链接 */
+    .links {
+        width: 1100px;
+    }
+
+    /* 底部 */
+    .footer .w {
+        width: 1080px;
+    }
+
+    .footer .w .Web_info .Web_describe p:nth-child(1) {
+        width: 700px;
+    }
+
+    /* 文章页 */
+    .article .comment .comment_info a {
+        margin: 0 10px 0 170px;
+    }
+
+    /* 相关推荐 */
+    .article .part_mor .box .item {
+        margin: 0 5px;
+    }
+
+    .article .comment .comment_box textarea {
+        background-size: 300px;
+    }
+}
+
+/* 适配1120屏幕 */
+@media screen and (max-width: 1120px) {
+    .main {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    /* 调整导航栏 */
+    .nav .w {
+        width: 100%;
+    }
+
+    .nav .one {
+        padding: 0 15px;
+        justify-content: space-between;
+    }
+
+    .nav .one li {
+        flex: 1;
+    }
+
+    .nav .one .item {
+        display: block;
+    }
+
+    /* 隐藏分类列表 */
+    .nav .one .item1:nth-child(n+3) {
+        display: none;
+    }
+
+    .nav .one .item1:nth-child(2) {
+        text-align: center;
+    }
+
+    .nav .one .function ol {
+        line-height: 70px;
+        float: right;
+    }
+
+    .nav .one .function {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .nav .one .function ol li {
+        margin: 0;
+    }
+
+    .nav .one .function ol li:nth-child(2) {
+        display: none;
+    }
+
+
+    /* 调整轮播图banner */
+    .banner {
+        height: 300px;
+    }
+
+    .banner .swiper-slide .text h3 {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    .banner .swiper-slide .text p {
+        font-size: 13px;
+    }
+
+    .banner .text h3 i {
+        font-size: 30px;
+    }
+
+    .main .home_list {
+        overflow: hidden;
+    }
+
+    /* 小于1120宽度时让右侧作者信息隐藏 */
+    .main .function {
+        display: none;
+    }
+
+    /* 小于1120就让分页变成加载数据按钮 */
+    .pagination {
+        display: none;
+    }
+
+    .loadList {
+        display: block;
+    }
+
+    /* 友情链接 */
+    .main_links {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .links {
+        width: 800px;
+    }
+
+    /* 底部 */
+    .footer .w {
+        width: 800px;
+    }
+
+    .footer .w .Web_info .Web_describe p:nth-child(1) {
+        width: 440px;
+    }
+
+    /* 分类页 */
+    .banner .cate_info .cate i,
+    .banner .cate_info .cate span {
+        font-size: 40px;
+    }
+
+    /* 侧边工具栏 */
+    .tool {
+        display: block !important;
+    }
+}
+
+/* 适配830屏幕 */
+@media screen and (max-width: 830px) {
+
+    /* 友情链接 */
+    .links {
+        width: 96%;
+    }
+
+    /* 底部 */
+    .footer {
+        overflow: hidden;
+        height: 120px;
+    }
+
+    .footer .w {
+        width: 100%;
+    }
+
+    .footer .w .ICP {
+        display: none;
+    }
+
+    .footer .w .Web_info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .footer .w .Web_info .Web_name {
+        padding-right: 0;
+        border: 0;
+        margin-top: 10px;
+    }
+
+    .footer .w .Web_info .Web_name .dian {
+        display: none;
+    }
+
+    .footer .w .Web_info .Web_describe {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .footer .w .Web_info .Web_describe p {
+        height: 30px;
+        line-height: 30px;
+    }
+
+    /* 侧边工具栏 */
+    .tool {
+        display: none !important;
+    }
+}
+
+/* 适配800屏幕 */
+@media screen and (max-width: 800px) {
+
+    /* 首页布局 */
+    .main {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .main .home_list>ul li {
+        height: 100px;
+    }
+
+    .main .home_list>ul li .left {
+        width: 190px;
+        height: 110px;
+    }
+
+    .main .home_list>ul li .right .meta>div {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        margin-bottom: -10px;
+    }
+
+    .main .home_list>ul li .right .meta>a {
+        display: none;
+    }
+
+    .main .home_list>ul li .right .meta>div a:nth-child(1) {
+        display: none;
+    }
+
+    .main .home_list>ul li .right h2 {
+        width: 100%;
+    }
+
+    .main .home_list>ul li .right h2 a {
+        font-size: 18px;
+    }
+
+    .main .home_list>ul li .right p {
+        font-size: 14px;
+        -webkit-line-clamp: 2;
+        margin: 3px 0;
+    }
+
+    /* 分类页 */
+    .banner .cate_info .cate i,
+    .banner .cate_info .cate span {
+        font-size: 30px;
+    }
+
+    /* 文章页布局 */
+    .main .article_list {
+        width: 100%;
+    }
+
+    /* 相关推荐 */
+    .article .part_mor .box .item {
+        padding: 10px;
+        margin: 0 6px;
+    }
+
+    .article .comment .comment_info a {
+        margin: 0;
+    }
+
+    .article .comment .comment_box textarea {
+        background-size: 270px;
+    }
+
+    .tags_red,
+    .tags_purple,
+    .tags_yellow,
+    .tags_blue {
+        padding: 3px;
+        font-size: 14px;
+    }
+}
+
+/* 适配530屏幕 */
+@media screen and (max-width: 530px) {
+    .main {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .main_links {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .main .home_list {
+        padding: 0 10px;
+    }
+
+    .main .home_list>ul li {
+        height: 60px;
+    }
+
+    .main .home_list>ul li .left {
+        width: 100px;
+        height: 60px;
+    }
+
+    .main .home_list>ul li .right .list-length {
+        display: none !important;
+    }
+
+    .main .home_list>ul li .right {
+        margin-left: 10px;
+    }
+
+    .main .home_list>ul li .right h2 {
+        white-space: normal;
+        display: -webkit-box !important;
+        overflow: hidden;
+        word-break: break-all;
+        text-overflow: ellipsis;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+
+        line-height: 1.2em;
+    }
+
+    .main .home_list>ul li .right h2 a {
+        font-size: 16px;
+    }
+
+    .main .home_list>ul li .right .meta {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main .home_list>ul li .right .meta>a {
+        display: none;
+    }
+
+    .main .home_list>ul li .right .meta>div a:nth-child(1) {
+        display: none;
+    }
+
+    /* 友情链接 */
+    .links ul li {
+        margin-right: 20px;
+    }
+
+    /* 底部 */
+    .footer .w .Web_info .Web_describe p:nth-child(1) {
+        margin-top: 5px;
+    }
+
+    .article .comment .hr .title_hr {
+        width: 150px;
+    }
+
+    /* 分类页 */
+    .banner .cate_info .cate i,
+    .banner .cate_info .cate span {
+        font-size: 25px;
+    }
+
+    /* 文章页 */
+    .article {
+        padding: 0;
+    }
+
+    .article .comment .comment_info {
+        flex-wrap: wrap;
+    }
+
+    .article .comment .comment_info a {
+        margin: 10px 10px 0 55px;
+    }
+
+    .article .comment .comment_info img {
+        transform: translate(0px, 20px);
+    }
+
+    .article .comment .comment_info input {
+        width: 75%;
+        margin-right: 0;
+    }
+
+    .article .comment .comment_info input:nth-of-type(2) {
+        margin-left: 55px;
+        margin-top: 5px;
+    }
+
+    .article .comment .comment_info a {
+        width: 100%;
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .article .comment .comment_box textarea {
+        background-size: 75%;
+        font-size: 16px;
+    }
+
+    .article .comment .phiz {
+        overflow: auto;
+        margin-bottom: 5px;
+    }
+
+    .article .article_Lable {
+        margin: 20px 0 10px;
+    }
+
+    /* 相关文章适配 */
+    .article .part_mor .box {
+        flex-wrap: wrap;
+    }
+
+    .article .part_mor .box .item {
+        width: 46%;
+        margin: 5px 6px;
+    }
+
+    .tags_red,
+    .tags_purple,
+    .tags_yellow,
+    .tags_blue {
+        padding: 2px;
+        font-size: 13px;
+    }
+
+    .list>ul li:hover .left span {
+        top: 5px;
+        right: 5px;
+    }
+}
+
+
+
+/* 大于1120就隐藏移动端侧边导航 */
+@media screen and (min-width: 1120px) {
+    .mNav {
+        display: none !important;
+    }
+}
+
+/* 小于1457就隐藏侧边工具栏 */
+@media screen and (max-width:1457px) {
+    .tool {
+        display: none;
+    }
+}

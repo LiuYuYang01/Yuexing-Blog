@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入icon页面图标 -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!-- 引入字体图标 -->
+    <link rel="stylesheet" href="./lib/font/iconfont.css">
+    <!-- 引入页面 CSS文件 -->
+    <link rel="stylesheet" href="./css/circle.css">
+    <!-- 引入页面 初始化样式 -->
+    <link rel="stylesheet" href="./css/init.css">
+    <!-- 引入页面 公共样式 -->
+    <link rel="stylesheet" href="./css/public.css">
+    <!-- 引入页面 响应式样式 -->
+    <link rel="stylesheet" href="./css/Responsive.css">
+    <!-- 引入轮播图 -->
+    <link rel="stylesheet" href="./lib/swiper/swiper-bundle.min.css" />
+    <title>Yuexing - 朋友圈</title>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <div class="nav">
+        <div class="w">
+            <!-- 一级导航 -->
+            <ul class="one">
+                <!-- 菜单 -->
+                <li class="item" id="menu">
+                    <a href="javascript:;" style="display: inline-block;">
+                        <i class="iconfont icon-caidan1"></i>
+                    </a>
+                </li>
+
+                <!-- logo -->
+                <li class="item1">
+                    <a href="./index.html">
+                        <img src="./image/logo2.png" alt="" id="logo">
+                    </a>
+                </li>
+
+                <li class="item1">
+                    <a href="./index.html">
+                        <i class="iconfont icon-shouye"></i>首页
+                    </a>
+                </li>
+
+                <li class="item1">
+                    <a href="./category.html">
+                        <i class="iconfont icon-bijiben1"></i>开发记录
+                    </a>
+                </li>
+
+                <li class="item1">
+                    <a href="./index.html">
+                        <i class="iconfont icon-yuandaima"></i>大前端
+                    </a>
+
+                    <!-- 二级导航 -->
+                    <ul class="two" style="display: none;">
+                        <li>
+                            <a href="javascript:;">HTML5</a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:;">CSS3</a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:;">JavaScript</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="item1">
+                    <a href="./index.html">
+                        <i class="iconfont icon-zuzhijiagou1"></i>框架
+                    </a>
+
+                    <!-- 二级导航 -->
+                    <ul class="two" style="display: none;">
+                        <li>
+                            <a href="javascript:;">Vue</a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:;">React</a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:;">Angular</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="item1">
+                    <a href="javascript:;">
+                        <i class="iconfont icon-zhuti1"></i>扩展
+                    </a>
+
+                    <ul class="two" style="display: none;">
+                        <li>
+                            <a href="./links.html"><i class="iconfont icon-quanzi1"></i>人脉圈</a>
+                        </li>
+
+                        <li>
+                            <a href="./circle.html"><i class="iconfont icon-pengyouquan1"></i>朋友圈</a>
+                        </li>
+
+                        <li>
+                            <a href="./bigData.html"><i class="iconfont icon-dashuju2"></i>大数据</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- 功能栏 -->
+                <li class="function">
+                    <ol>
+                        <!-- 白天昼夜切换 -->
+                        <li id="HighlightToggle">
+                            <img src="./image/taiyang.png" alt="">
+                        </li>
+
+                        <li>
+                            <a href="javascript:;">
+                                <i class="iconfont icon-sousuo1"></i>
+                            </a>
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 移动端的侧边导航栏 -->
+    <div class="mNav">
+        <!-- 头像 -->
+        <div class="user">
+            <img src="./image/user.png" alt="">
+            <span>Yuexing</span>
+            <p>不断改善成为最佳!</p>
+        </div>
+
+        <!-- 导航栏 -->
+        <ul>
+            <li class="item">
+                <a href="./index.html">
+                    <i class="iconfont icon-shouye"></i>首页
+                </a>
+            </li>
+
+            <li class="item">
+                <a href="./category.html">
+                    <i class="iconfont icon-bijiben1"></i>开发记录
+                </a>
+            </li>
+
+            <li class="item">
+                <a href="javascript:;" id="twoNav">
+                    <i class="iconfont icon-yuandaima"></i>大前端
+                </a>
+
+                <!-- 二级导航 -->
+                <ul class="two">
+                    <li>
+                        <a href="javascript:;">HTML5</a>
+                    </li>
+
+                    <li>
+                        <a href="javascript:;">CSS3</a>
+                    </li>
+
+                    <li>
+                        <a href="javascript:;">JavaScript</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="item">
+                <a href="javascript:;" id="twoNav">
+                    <i class="iconfont icon-zuzhijiagou1"></i>框架
+                </a>
+
+                <!-- 二级导航 -->
+                <ul class="two">
+                    <li>
+                        <a href="javascript:;">Vue</a>
+                    </li>
+
+                    <li>
+                        <a href="javascript:;">React</a>
+                    </li>
+
+                    <li>
+                        <a href="javascript:;">Angular</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="item">
+                <a href="javascript:;" id="twoNav">
+                    <i class="iconfont icon-zhuti1"></i>扩展
+                </a>
+
+                <ul class="two">
+                    <li>
+                        <a href="./links.html">
+                            <i class="iconfont icon-quanzi1"></i>人脉圈
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./circle.html">
+                            <i class="iconfont icon-pengyouquan1"></i>朋友圈
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./bigData.html"><i class="iconfont icon-dashuju2"></i>大数据</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 遮罩层 -->
+    <div class="mask"></div>
+
+    <!-- 轮播图 -->
+    <div class="banner">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="text">
+                        <h3><i class="iconfont icon-pengyouquan1"></i>朋友圈</h3>
+                        <p>Wechat Moments</p>
+                    </div>
+
+                    <img src="http://139.196.43.147/gallery/t01d6f5fd3610da0a08.jpg" alt="">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- 引入swiper轮播图插件 -->
+        <script src="./lib/swiper/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                pagination: {
+                    el: ".swiper-pagination",
+                    dynamicBullets: true
+                },
+                autoplay: {
+                    delay: 5000
+                },
+                loop: false,
+            });
+        </script>
+
+        <!-- 波纹 -->
+        <div class="ripple">
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave"
+                        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                </g>
+            </svg>
+        </div>
+    </div>
+
+    <!-- 主体内容 -->
+    <div class="main">
+        <div class="w">
+            <!-- 文章列表 -->
+            <div class="list home_list">
+                <!-- 朋友圈 -->
+                <div class="circle">
+                    <!-- 朋友圈列表 -->
+                    <div class="list">
+                        <!-- 小圆点 -->
+                        <div class="dots">
+                            <ol>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ol>
+                        </div>
+
+                        <!-- 标题 -->
+                        <div class="title">
+                            <img src="http://q1.qlogo.cn/g?b=qq&nk=3311118881&s=100" alt="">
+                            <h3>梦想家阳阳</h3>
+                        </div>
+
+                        <!-- 内容 -->
+                        <div class="info">
+                            <!-- 文本内容 -->
+                            <div class="listInfo">
+                                <p>今天在看到一个问题，代码的终极追求是什么？<br>代码的终极追求是不是稳定、高性能、高扩展性，最好傻子也能来修改和维护
+                                    那么程序员的终极目标，是否就是把代码打磨到能把自己裁掉到程度</p>
+                            </div>
+
+                            <!-- 图片 -->
+                            <div class="listImg">
+
+                            </div>
+                        </div>
+
+                        <!-- 底部 -->
+                        <div class="listFootel">
+                            <span>昨天</span>
+
+                            <!-- 点赞评论 -->
+                            <div class="fn">
+                                <a href="javascript:;" style="margin-right: 25px;">
+                                    <i class="iconfont icon-dianzan3"></i>13
+                                </a>
+
+                                <a href="javascript:;" id="circleComment">
+                                    <i class="iconfont icon-pinglun1"></i>5
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- 评论框 -->
+                        <div class="commentBox">
+                            <!-- 评论 -->
+                            <div class="comment">
+                                <!-- 文本里面限制字数200字 -->
+                                <textarea placeholder="说些什么吧..."></textarea>
+
+                                <!-- 发布按钮 -->
+                                <a href="javascript:;">
+                                    <i class="iconfont icon-yubaofabu"></i>
+                                </a>
+                            </div>
+
+                            <!-- 评论列表 -->
+                            <div class="commentList">
+                                <div class="item">
+                                    <div class="title">
+                                        <img src="http://q1.qlogo.cn/g?b=qq&nk=2079890613&s=100" alt="">
+                                        <h3>晴天</h3>
+                                    </div>
+
+                                    <div class="info">
+                                        <p>网站好好看，我好爱！</p>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="title">
+                                        <img src="http://q1.qlogo.cn/g?b=qq&nk=380316737&s=100" alt="">
+                                        <h3>差一点</h3>
+                                    </div>
+
+                                    <div class="info">
+                                        <p>牛蛙! 牛蛙!</p>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="title">
+                                        <img src="http://q1.qlogo.cn/g?b=qq&nk=1651007391&s=100" alt="">
+                                        <h3>牧原</h3>
+                                    </div>
+
+                                    <div class="info">
+                                        <p>是个不错的作品</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list">
+                        <!-- 小圆点 -->
+                        <div class="dots">
+                            <ol>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ol>
+                        </div>
+
+                        <!-- 标题 -->
+                        <div class="title">
+                            <img src="http://q1.qlogo.cn/g?b=qq&nk=3311118881&s=100" alt="">
+                            <h3>梦想家阳阳</h3>
+                        </div>
+
+                        <!-- 内容 -->
+                        <div class="info">
+                            <!-- 文本内容 -->
+                            <div class="listInfo">
+                                <p>我每天花十几个小时学习编程，你们却用 "聪明" 两个字埋没我的所有努力</p>
+                            </div>
+
+                            <!-- 图片 -->
+                            <div class="listImg">
+                                <img src="http://liuyuyang.net/usr/uploads/2022/07/2791484077.png" alt="">
+                            </div>
+                        </div>
+
+
+                        <!-- 底部 -->
+                        <div class="listFootel">
+                            <span>07-31</span>
+
+                            <!-- 点赞评论 -->
+                            <div class="fn">
+                                <a href="javascript:;" style="margin-right: 25px;">
+                                    <i class="iconfont icon-dianzan3"></i>5
+                                </a>
+
+                                <a href="javascript:;" id="circleComment">
+                                    <i class="iconfont icon-pinglun1"></i>9
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- 评论框 -->
+                        <div class="commentBox">
+                            <!-- 评论 -->
+                            <div class="comment">
+                                <!-- 文本里面限制字数200字 -->
+                                <textarea placeholder="说些什么吧..."></textarea>
+
+                                <!-- 发布按钮 -->
+                                <a href="javascript:;">
+                                    <i class="iconfont icon-yubaofabu"></i>
+                                </a>
+                            </div>
+
+                            <!-- 评论列表 -->
+                            <div class="commentList">
+                                <div class="item">
+                                    <div class="title">
+                                        <img src="http://q1.qlogo.cn/g?b=qq&nk=2079890613&s=100" alt="">
+                                        <h3>晴天</h3>
+                                    </div>
+
+                                    <div class="info">
+                                        <p>网站好好看，我好爱！</p>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="title">
+                                        <img src="http://q1.qlogo.cn/g?b=qq&nk=380316737&s=100" alt="">
+                                        <h3>差一点</h3>
+                                    </div>
+
+                                    <div class="info">
+                                        <p>牛蛙! 牛蛙!</p>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="title">
+                                        <img src="http://q1.qlogo.cn/g?b=qq&nk=1651007391&s=100" alt="">
+                                        <h3>牧原</h3>
+                                    </div>
+
+                                    <div class="info">
+                                        <p>是个不错的作品</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list">
+                        <!-- 小圆点 -->
+                        <div class="dots">
+                            <ol>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ol>
+                        </div>
+
+                        <!-- 标题 -->
+                        <div class="title">
+                            <img src="http://q1.qlogo.cn/g?b=qq&nk=3311118881&s=100" alt="">
+                            <h3>梦想家阳阳</h3>
+                        </div>
+
+                        <!-- 内容 -->
+                        <div class="info">
+                            <!-- 文本内容 -->
+                            <div class="listInfo">
+                                <p>UI是我、前端是我、后端是我、测试也是我、产品经理还是我，这就是传说中的全栈开发工程师😎</p>
+                            </div>
+
+                            <!-- 图片 -->
+                            <div class="listImg">
+                                <img src="http://liuyuyang.net/usr/uploads/2022/07/1673808997.jpg" alt="">
+                            </div>
+                        </div>
+
+
+                        <!-- 底部 -->
+                        <div class="listFootel">
+                            <span>一月前</span>
+
+                            <!-- 点赞评论 -->
+                            <div class="fn">
+                                <a href="javascript:;" style="margin-right: 25px;">
+                                    <i class="iconfont icon-dianzan3"></i>54
+                                </a>
+
+                                <a href="javascript:;" id="circleComment">
+                                    <i class="iconfont icon-pinglun1"></i>28
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- 评论框 -->
+                        <div class="commentBox">
+                            <!-- 评论 -->
+                            <div class="comment">
+                                <!-- 文本里面限制字数200字 -->
+                                <textarea placeholder="说些什么吧..."></textarea>
+
+                                <!-- 发布按钮 -->
+                                <a href="javascript:;">
+                                    <i class="iconfont icon-yubaofabu"></i>
+                                </a>
+                            </div>
+
+                            <!-- 评论列表 -->
+                            <div class="commentList">
+                                <div class="item">
+                                    <div class="title">
+                                        <img src="http://q1.qlogo.cn/g?b=qq&nk=2079890613&s=100" alt="">
+                                        <h3>晴天</h3>
+                                    </div>
+
+                                    <div class="info">
+                                        <p>网站好好看，我好爱！</p>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="title">
+                                        <img src="http://q1.qlogo.cn/g?b=qq&nk=380316737&s=100" alt="">
+                                        <h3>差一点</h3>
+                                    </div>
+
+                                    <div class="info">
+                                        <p>牛蛙! 牛蛙!</p>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="title">
+                                        <img src="http://q1.qlogo.cn/g?b=qq&nk=1651007391&s=100" alt="">
+                                        <h3>牧原</h3>
+                                    </div>
+
+                                    <div class="info">
+                                        <p>是个不错的作品</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list">
+                        <!-- 小圆点 -->
+                        <div class="dots">
+                            <ol>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ol>
+                        </div>
+
+                        <!-- 标题 -->
+                        <div class="title">
+                            <img src="http://q1.qlogo.cn/g?b=qq&nk=3311118881&s=100" alt="">
+                            <h3>梦想家阳阳</h3>
+                        </div>
+
+                        <!-- 内容 -->
+                        <div class="info">
+                            <!-- 文本内容 -->
+                            <div class="listInfo">
+                                <p>是傍晚的棉花糖</p>
+                            </div>
+
+                            <!-- 图片 -->
+                            <div class="listImg">
+                                <img src="https://inis.ztyang.com/storage/users/files/1/2022-07/1658404357.jpeg" alt="">
+                                <img src="https://inis.ztyang.com/storage/users/files/1/2022-07/1658404367.jpeg" alt="">
+                                <img src="https://inis.ztyang.com/storage/users/files/1/2022-07/1658404381.jpeg" alt="">
+                                <img src="https://inis.ztyang.com/storage/users/files/1/2022-07/1658404394.jpeg" alt="">
+                            </div>
+                        </div>
+
+
+                        <!-- 底部 -->
+                        <div class="listFootel">
+                            <span>一年前</span>
+
+                            <!-- 点赞评论 -->
+                            <div class="fn">
+                                <a href="javascript:;" style="margin-right: 25px;">
+                                    <i class="iconfont icon-dianzan3"></i>33
+                                </a>
+
+                                <a href="javascript:;" id="circleComment">
+                                    <i class="iconfont icon-pinglun1"></i>7
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- 评论框 -->
+                        <div class="commentBox">
+                            <!-- 评论 -->
+                            <div class="comment">
+                                <!-- 文本里面限制字数200字 -->
+                                <textarea placeholder="说些什么吧..."></textarea>
+
+                                <!-- 发布按钮 -->
+                                <a href="javascript:;">
+                                    <i class="iconfont icon-yubaofabu"></i>
+                                </a>
+                            </div>
+
+                            <!-- 评论列表 -->
+                            <div class="commentList">
+                                <div class="item">
+                                    <div class="title">
+                                        <img src="http://q1.qlogo.cn/g?b=qq&nk=2079890613&s=100" alt="">
+                                        <h3>晴天</h3>
+                                    </div>
+
+                                    <div class="info">
+                                        <p>网站好好看，我好爱！</p>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="title">
+                                        <img src="http://q1.qlogo.cn/g?b=qq&nk=380316737&s=100" alt="">
+                                        <h3>差一点</h3>
+                                    </div>
+
+                                    <div class="info">
+                                        <p>牛蛙! 牛蛙!</p>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="title">
+                                        <img src="http://q1.qlogo.cn/g?b=qq&nk=1651007391&s=100" alt="">
+                                        <h3>牧原</h3>
+                                    </div>
+
+                                    <div class="info">
+                                        <p>是个不错的作品</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 加载列表 -->
+                <div class="loadList" style="display: block;">
+                    <i class="iconfont icon-loadm"></i>
+                    <span>加载更多</span>
+                </div>
+            </div>
+
+            <!-- 功能模块 -->
+            <div class="function">
+                <div class="sticky">
+                    <!-- 作者详情 -->
+                    <div class="author">
+                        <!-- 背景图片 -->
+                        <div class="author-bg">
+                            <!-- 头像 -->
+                            <div class="avatar">
+                                <img src="./image/user.png" alt="">
+                            </div>
+                        </div>
+
+                        <!-- 作者信息 -->
+                        <div class="text">
+                            <h4>
+                                <a href="javascript:;">悦兴</a>
+                                <div class="medal"></div>
+                            </h4>
+                            <p>也许，将会是最好用的博客管理系统</p>
+                        </div>
+
+                        <!-- 功能 -->
+                        <div class="fun">
+                            <!-- 发布文章 -->
+                            <div class="login"><a href="javascript:;">登录</a></div>
+
+                            <span></span>
+
+                            <!-- 登录后台 -->
+                            <div class="register"><a href="javascript:;">注册</a></div>
+                        </div>
+                    </div>
+
+                    <!-- 随机文章 -->
+                    <div class="containerA">
+                        <!-- 标题 -->
+                        <div class="title">
+                            <h3><i class="iconfont icon-suijishushengcheng"></i> 随机文章</h3>
+                            <!-- 小圆点 -->
+                            <div class="dots">
+                                <ol>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <!-- 随机文章 -->
+                        <div class="random_Alist">
+                            <ul>
+                                <li>
+                                    <i class="iconfont icon-xiangyoujiantou"></i>
+                                    <a href="javascript:;">2022 年的 React 生态</a>
+                                </li>
+
+                                <li>
+                                    <i class="iconfont icon-xiangyoujiantou"></i>
+                                    <a href="javascript:;">字节跳动自研高性能微服务框架 Kitex 的演进之旅</a>
+                                </li>
+
+                                <li>
+                                    <i class="iconfont icon-xiangyoujiantou"></i>
+                                    <a href="javascript:;">两年前端，广州求职，要价 14k，依我说，小伙子可以多要点，涉及组件建设、工程化以及丰富的项目经验</a>
+                                </li>
+
+                                <li>
+                                    <i class="iconfont icon-xiangyoujiantou"></i>
+                                    <a href="javascript:;">解放双手！推荐一款阿里开源的低代码工具，YYDS！</a>
+                                </li>
+
+                                <li>
+                                    <i class="iconfont icon-xiangyoujiantou"></i>
+                                    <a href="javascript:;">Web3.0来了，花呗借呗前端团队开源的Web图形引擎会成为元宇宙的技术支撑吗？</a>
+                                </li>
+
+                                <li>
+                                    <i class="iconfont icon-xiangyoujiantou"></i>
+                                    <a href="javascript:;">超越 Nginx！号称下一代 Web 服务器，用起来够优雅！</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 标签栏 -->
+                    <div class="containerA">
+                        <!-- 标题 -->
+                        <div class="title">
+                            <h3><i class="iconfont icon-tuya_huabanfuben"></i> 标签栏</h3>
+                            <!-- 小圆点 -->
+                            <div class="dots">
+                                <ol>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <!-- 标签 -->
+                        <div class="containerA_Tags">
+                            <a href="javascript:;">HTML</a>
+                            <a href="javascript:;">CSS</a>
+                            <a href="javascript:;">Vue</a>
+                            <a href="javascript:;">jQuery</a>
+                            <a href="javascript:;">Vue</a>
+                            <a href="javascript:;">React</a>
+                            <a href="javascript:;">Angular</a>
+                            <a href="javascript:;">less</a>
+                            <a href="javascript:;">Node.js</a>
+                            <a href="javascript:;">Bootstrap</a>
+                            <a href="javascript:;">Element</a>
+                            <a href="javascript:;">scss</a>
+                            <a href="javascript:;">uni-app</a>
+                            <a href="javascript:;">Foundation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部 -->
+    <div class="footer">
+        <div class="w">
+            <!-- 站点信息 -->
+            <div class="Web_info">
+                <!-- 站点名称 -->
+                <div class="Web_name">
+                    <h1><a href="javascript:;">Yuexing</a></h1>
+                    <div class="dian"></div>
+                </div>
+
+                <!-- 站点描述 -->
+                <div class="Web_describe">
+                    <p>© 2022 <a href="javascript:;">Yuexing</a> - 也许，将会是最好用的博客管理系统！</p>
+                    <p>Perhaps, it will be the best blog management system!</p>
+                </div>
+            </div>
+
+            <!-- ICP备案号 -->
+            <div class="ICP">
+                <a href="https://beian.miit.gov.cn/#/Integrated/index"><i
+                        class="iconfont icon-icp-license"></i>豫ICP备2020031040号-1</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 侧边工具栏 -->
+    <div class="tool">
+        <div class="item">
+            <a href="javascript:;">
+                <i class="iconfont icon-zhuti_yifu_o"></i>
+            </a>
+        </div>
+
+        <div class="item">
+            <a href="javascript:;" id="returnTop">
+                <i class="iconfont icon-fanhuidingbu1"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- 引入公共 JavaScript文件 -->
+    <script src="./js/public.js"></script>
+    <!-- 引入页面JavaScript文件 -->
+    <script src="./js/circle.js"></script>
+</body>
+
+</html>

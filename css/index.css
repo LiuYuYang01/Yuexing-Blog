@@ -1,0 +1,8 @@
+.pagination{
+  display: block;
+}
+
+.loadList{
+  display: none;
+  margin: 30px auto !important;
+}

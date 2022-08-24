@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入icon页面图标 -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!-- 引入字体图标 -->
+    <link rel="stylesheet" href="./lib/font/iconfont.css">
+    <!-- 引入页面 CSS文件 -->
+    <link rel="stylesheet" href="./css/bigData.css">
+    <!-- 引入页面 初始化样式 -->
+    <link rel="stylesheet" href="./css/init.css">
+    <!-- 引入页面 公共样式 -->
+    <link rel="stylesheet" href="./css/public.css">
+    <!-- 引入页面 响应式样式 -->
+    <link rel="stylesheet" href="./css/Responsive.css">
+    <!-- 引入轮播图 -->
+    <link rel="stylesheet" href="./lib/swiper/swiper-bundle.min.css" />
+    <!-- 引入可视化图表 -->
+    <script src="./lib/echarts/echarts.min.js"></script>
+    <title>Yuexing - 不断改善，成为最佳🎉</title>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <div class="nav">
+        <div class="w">
+            <!-- 一级导航 -->
+            <ul class="one">
+                <!-- 菜单 -->
+                <li class="item" id="menu">
+                    <a href="javascript:;" style="display: inline-block;">
+                        <i class="iconfont icon-caidan1"></i>
+                    </a>
+                </li>
+
+                <!-- logo -->
+                <li class="item1">
+                    <a href="./index.html">
+                        <img src="./image/logo.png" alt="" id="logo">
+                    </a>
+                </li>
+
+                <li class="item1">
+                    <a href="./index.html">
+                        <i class="iconfont icon-shouye"></i>首页
+                    </a>
+                </li>
+
+                <li class="item1">
+                    <a href="./category.html">
+                        <i class="iconfont icon-bijiben1"></i>开发记录
+                    </a>
+                </li>
+
+                <li class="item1">
+                    <a href="./index.html">
+                        <i class="iconfont icon-yuandaima"></i>大前端
+                    </a>
+
+                    <!-- 二级导航 -->
+                    <ul class="two" style="display: none;">
+                        <li>
+                            <a href="javascript:;">HTML5</a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:;">CSS3</a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:;">JavaScript</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="item1">
+                    <a href="./index.html">
+                        <i class="iconfont icon-zuzhijiagou1"></i>框架
+                    </a>
+
+                    <!-- 二级导航 -->
+                    <ul class="two" style="display: none;">
+                        <li>
+                            <a href="javascript:;">Vue</a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:;">React</a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:;">Angular</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="item1">
+                    <a href="javascript:;">
+                        <i class="iconfont icon-zhuti1"></i>扩展
+                    </a>
+
+                    <ul class="two" style="display: none;">
+                        <li>
+                            <a href="./links.html"><i class="iconfont icon-quanzi1"></i>人脉圈</a>
+                        </li>
+
+                        <li>
+                            <a href="./circle.html"><i class="iconfont icon-pengyouquan1"></i>朋友圈</a>
+                        </li>
+
+                        <li>
+                            <a href="./circle.html"><i class="iconfont icon-dashuju2"></i>大数据</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- 功能栏 -->
+                <li class="function">
+                    <ol>
+                        <!-- 白天昼夜切换 -->
+                        <li id="HighlightToggle">
+                            <img src="./image/taiyang.png" alt="">
+                        </li>
+
+                        <li>
+                            <a href="javascript:;">
+                                <i class="iconfont icon-sousuo1"></i>
+                            </a>
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 移动端的侧边导航栏 -->
+    <div class="mNav">
+        <!-- 头像 -->
+        <div class="user">
+            <img src="./image/user.png" alt="">
+            <span>Yuexing</span>
+            <p>不断改善成为最佳!</p>
+        </div>
+
+        <!-- 导航栏 -->
+        <ul>
+            <li class="item">
+                <a href="./index.html">
+                    <i class="iconfont icon-shouye"></i>首页
+                </a>
+            </li>
+
+            <li class="item">
+                <a href="./category.html">
+                    <i class="iconfont icon-bijiben1"></i>开发记录
+                </a>
+            </li>
+
+            <li class="item">
+                <a href="javascript:;" id="twoNav">
+                    <i class="iconfont icon-yuandaima"></i>大前端
+                </a>
+
+                <!-- 二级导航 -->
+                <ul class="two">
+                    <li>
+                        <a href="javascript:;">HTML5</a>
+                    </li>
+
+                    <li>
+                        <a href="javascript:;">CSS3</a>
+                    </li>
+
+                    <li>
+                        <a href="javascript:;">JavaScript</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="item">
+                <a href="javascript:;" id="twoNav">
+                    <i class="iconfont icon-zuzhijiagou1"></i>框架
+                </a>
+
+                <!-- 二级导航 -->
+                <ul class="two">
+                    <li>
+                        <a href="javascript:;">Vue</a>
+                    </li>
+
+                    <li>
+                        <a href="javascript:;">React</a>
+                    </li>
+
+                    <li>
+                        <a href="javascript:;">Angular</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="item">
+                <a href="javascript:;" id="twoNav">
+                    <i class="iconfont icon-zhuti1"></i>扩展
+                </a>
+
+                <ul class="two">
+                    <li>
+                        <a href="./links.html">
+                            <i class="iconfont icon-quanzi1"></i>人脉圈
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./circle.html">
+                            <i class="iconfont icon-pengyouquan1"></i>朋友圈
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./circle.html">
+                            <i class="iconfont icon-dashuju2"></i>大数据
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 遮罩层 -->
+    <div class="mask"></div>
+
+    <!-- 主体内容 -->
+    <div class="main">
+        <div class="w">
+            <!-- 文章列表 -->
+            <div class="list home_list">
+                <!-- 小圆点 -->
+                <div class="dots">
+                    <ol>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ol>
+                </div>
+
+                <!-- 数据分析 -->
+                <div class="echarts">
+                    <!-- 数据总览 -->
+                    <div class="overview">
+                        <h3><i class="iconfont icon-ambitus05" style="font-size: 22px;"></i>数据总览</h3>
+
+                        <div class="item">
+                            <a href="javascript:;">
+                                <span>文章总计：</span>
+                                <span>353</span>
+                            </a>
+                        </div>
+
+                        <div class="item">
+                            <a href="javascript:;">
+                                <span>标签总计：</span>
+                                <span>37</span>
+                            </a>
+                        </div>
+
+                        <div class="item">
+                            <a href="javascript:;">
+                                <span>评论总计：</span>
+                                <span>5</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- 文章分析 -->
+                    <div class="articleAnalysisBox">
+                        <h3><i class="iconfont icon-dashuju2" style="font-size: 22px;"></i>分类统计</h3>
+                        <div class="articleAnalysis"></div>
+                    </div>
+                </div>
+
+                <script src="./js/echarts.js"></script>
+            </div>
+        </div>
+    </div>
+
+    <!-- 友情链接 -->
+    <div class="links w">
+        <h3>
+            <i class="iconfont icon-lianjie1"></i>
+            <span>友情链接</span>
+            <a href="./links.html" style="float: right;font-size: 15px;">更多</a>
+        </h3>
+
+        <ul>
+            <li>
+                <a href="https://github.com/">GitHub</a>
+            </li>
+            <li>
+                <a href="https://www.csdn.net/">CSDN</a>
+            </li>
+            <li>
+                <a href="https://juejin.cn/">掘金</a>
+            </li>
+            <li>
+                <a href="https://www.cnblogs.com/">博客园</a>
+            </li>
+            <li>
+                <a href="https://segmentfault.com/">思否</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 底部 -->
+    <div class="footer">
+        <div class="w">
+            <!-- 站点信息 -->
+            <div class="Web_info">
+                <!-- 站点名称 -->
+                <div class="Web_name">
+                    <h1><a href="javascript:;">Yuexing</a></h1>
+                    <div class="dian"></div>
+                </div>
+
+                <!-- 站点描述 -->
+                <div class="Web_describe">
+                    <p>© 2022 <a href="javascript:;">Yuexing</a> - 也许，将会是最好用的博客管理系统！</p>
+                    <p>Perhaps, it will be the best blog management system!</p>
+                </div>
+            </div>
+
+            <!-- ICP备案号 -->
+            <div class="ICP">
+                <a href="https://beian.miit.gov.cn/#/Integrated/index"><i
+                        class="iconfont icon-icp-license"></i>豫ICP备2020031040号-1</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 侧边工具栏 -->
+    <div class="tool">
+        <div class="item">
+            <a href="javascript:;">
+                <i class="iconfont icon-zhuti_yifu_o"></i>
+            </a>
+        </div>
+
+        <div class="item">
+            <a href="javascript:;" id="returnTop">
+                <i class="iconfont icon-fanhuidingbu1"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- 引入公共 JavaScript文件 -->
+    <script src="./js/public.js"></script>
+    <!-- 引入页面JavaScript文件 -->
+    <script src="./js/bigData.js"></script>
+</body>
+
+</html>

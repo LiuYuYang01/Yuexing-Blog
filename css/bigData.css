@@ -1,0 +1,170 @@
+/* 导航栏样式 */
+.nav {
+    background-color: var(--Yuexing-bg);
+}
+
+.nav .one .item1:nth-child(n+2)::before {
+    background-color: var(--Yuexing-color) !important;
+}
+
+.nav .one .item1>a {
+    color: var(--Yuexing-a) !important;
+}
+
+.main {
+    margin-top: 60px !important;
+}
+
+/* 数据分析 */
+.main .echarts h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: var(--Yuexing-a);
+    transition: all 0.5s;
+}
+
+/* 总览 */
+.main .echarts .overview {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.main .echarts .overview .item {
+    overflow: hidden;
+    display: inline-block;
+    width: 30%;
+    height: 150px;
+    line-height: 150px;
+    margin: 0 1.5%;
+    text-align: center;
+    border-radius: 3px;
+    color: #fff;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    transition: all 0.5s;
+}
+
+.main .echarts .overview .item a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.main .echarts .overview .item a span {
+    color: #fff;
+    font-size: 30px;
+}
+
+.main .echarts .overview .item a span:nth-child(1) {
+    width: 100px;
+}
+
+.main .echarts .overview .item a span:nth-child(2) {
+    font-size: 50px;
+}
+
+
+/* 文章分析 */
+.main .echarts .articleAnalysisBox {
+    position: relative;
+}
+
+.main .echarts .articleAnalysisBox h3 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+}
+
+.main .echarts .articleAnalysisBox .articleAnalysis {
+    width: 100%;
+    height: 600px;
+}
+
+@media screen and (max-width: 1260px) {
+    .main>.w>.list {
+        width: 1100px !important;
+    }
+
+    .main .echarts .articleAnalysisBox .articleAnalysis {
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .links {
+        width: 96% !important;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .main .echarts .overview .item {
+        height: 130px;
+        line-height: 130px;
+    }
+
+    .main .echarts .overview .item a span:nth-child(1) {
+        font-size: 25px !important;
+    }
+
+    .main .echarts .overview .item a span:nth-child(2) {
+        font-size: 40px !important;
+    }
+
+    .main .echarts .articleAnalysisBox .articleAnalysis {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .main .echarts .overview .item {
+        margin: 0 1.35%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .main .echarts .overview .item {
+        height: 100px;
+        line-height: 100px;
+    }
+
+    .main .echarts .overview .item a span:nth-child(1) {
+        font-size: 17px !important;
+    }
+
+    .main .echarts .overview .item a span:nth-child(2) {
+        font-size: 30px !important;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .main>.w>.list {
+        padding: 0 10px !important;
+    }
+
+    .main .echarts .articleAnalysisBox .articleAnalysis {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 505px) {
+    .main .echarts .overview .item {
+        height: 70px;
+        line-height: 70px;
+    }
+
+    .main .echarts .overview .item a span:nth-child(1) {
+        font-size: 12px !important;
+    }
+
+    .main .echarts .overview .item a span:nth-child(2) {
+        font-size: 20px !important;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .main .echarts .overview .item {
+        margin: 0 1%;
+    }
+}

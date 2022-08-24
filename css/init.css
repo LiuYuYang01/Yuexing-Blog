@@ -1,0 +1,217 @@
+/* ————————————————初始化代码———————————————— */
+
+/* 网页滑动条样式 */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 7px;
+    background-color: var(--Yuexing-color);
+    transition: all 0.5s;
+}
+
+::-webkit-scrollbar-track {
+    /* border-radius: 7px; */
+    background-color: #d3dce6;
+}
+
+/* Swiper初始化 */
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* css变量 */
+:root {
+    /* 白天 */
+    --Yuexing-color: #539dfd;
+    --Yuexing-body-bg: #f9f9f9;
+    --Yuexing-bg: #fff;
+    --Yuexing-a: #333;
+    --Yuexing-a-vice: #5a5a5a;
+    --Yuexing-hr: #ededed;
+    --Yuexing-footer: #fff;
+    --Yuexing-ripple: rgba(249, 249, 249, 0.7);
+    --Yuexing-tags-a: #539dfd;
+    --Yuexing-nav-tags: #666;
+    --Yuexing-banner-linear: 249, 249, 249;
+    --Yuexing-pagination-a: #ebf1ff;
+    --Yuexing-hover-color: #539dfd;
+    --Yuexing-article: #333;
+    --Yuexing-select: #f2f3fc;
+    --Yuexing-input-bk: #dedede;
+    --Yuexing-input-bj: #fff;
+    --Yuexing-tags-bk: #f3f4f9;
+    --Yuexing-text-bk: #ddd;
+    --Yuexing-dashed: #eee;
+    --Yuexing-mNav: #fff;
+    --Yuexing-mNav-two: #f9f9f9;
+    --Yuexing-mNav-two-active1: #539dfd;
+    --Yuexing-mNav-two-active2: #fff;
+    --Yuexing-links-item-bg: #fff;
+    --Yuexing-title: #333;
+    --Yuexing-tool: #f4f9ff;
+    --Yuexing-commentTextarea:#f2f7ff;
+    --Yuexing-commentList: #fbfcfc;
+
+    /* 昼夜 */
+    /* 
+                        color: '#539dfd',
+                        body_bg: '#151617',
+                        bg: '#1d1f20',
+                        a: '#fff',
+                        a_vice: '#a4a8b4',
+                        hr: '#000',
+                        footer: '#1d1f20',
+                        ripple: 'rgba(21, 22, 23, 0.7)',
+                        tags_a: '#fff',
+                        nav_tags: '#fff',
+                        banner_linear: '21, 22, 23',
+                        pagination_a: '#151617',
+                        article: '#a4a8b4',
+                        select: 'transparent',
+                        input_bk: '#151617',
+                        input_bj: '#151617',
+                        tags_bk: '#a4a8b4',
+                        text_bk: '#333',
+                        dashed: '#333',
+                        mNav: '#151617',
+                        mNav_two: '#1d1f20',
+                        mNav_two_active1: '#539dfd',
+                        mNav_two_active2: '#fff',
+                        links_item_bg:'#313131',
+                        title:#539dfd,
+                        commentTextarea:#292929,
+                        commentList：#343637
+                    */
+}
+
+
+/* 背景颜色 */
+body {
+    color: #333;
+    background-color: var(--Yuexing-body-bg);
+    transition: all 0.5s;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* 版心 */
+.w {
+    width: 1250px;
+    margin: 0 auto;
+}
+
+
+div {
+    box-sizing: border-box;
+}
+
+
+/* 给所有a设置鼠标经过样式 */
+a {
+    font-size: 14px;
+    transition: all 0.5s;
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: var(--Yuexing-hover-color) !important;
+}
+
+
+/* 设置图片默认对齐方式 */
+img {
+    vertical-align: middle;
+}
+
+
+i {
+    font-style: normal;
+    margin-right: 3px;
+}
+
+li {
+    list-style: none;
+}
+
+hr {
+    margin: 10px 0;
+    height: 1px;
+    border: none;
+    border-top: 1px solid var(--Yuexing-hr);
+}
+
+textarea,
+input {
+    outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+    margin: 0;
+}
+
+::selection {
+    background-color: var(--Yuexing-select);
+    color: var(--Yuexing-hover-color);
+}
+
+/* 占位 */
+.occupy {
+    margin-bottom: 200px;
+}

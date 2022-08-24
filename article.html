@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- 引入icon页面图标 -->
+	<link rel="shortcut icon" href="favicon.ico" />
+	<!-- 引入字体图标 -->
+	<link rel="stylesheet" href="./lib/font/iconfont.css">
+	<!-- 引入页面 CSS文件 -->
+	<link rel="stylesheet" href="./css/article.css">
+	<!-- 引入页面 初始化样式 -->
+	<link rel="stylesheet" href="./css/init.css">
+	<!-- 引入页码 公共样式 -->
+	<link rel="stylesheet" href="./css/public.css">
+	<!-- 引入页面 响应式样式 -->
+	<link rel="stylesheet" href="./css/Responsive.css">
+	<!-- 引入代码高亮插件 -->
+	<link rel="stylesheet" href="./lib/highlight/styles/vs2015.min.css">
+	<!-- <link rel="stylesheet" href="./lib/highlight/styles/xcode.min.css"> -->
+	<script src="./lib/highlight/highlight.min.js"></script>
+	<title>Yuexing - 文章页面</title>
+</head>
+
+<body>
+	<!-- 导航栏 -->
+	<div class="nav">
+		<div class="w">
+			<!-- 一级导航 -->
+			<ul class="one">
+				<!-- 菜单 -->
+				<li class="item" id="menu">
+					<a href="javascript:;" style="display: inline-block;">
+						<i class="iconfont icon-caidan1"></i>
+					</a>
+				</li>
+
+				<!-- logo -->
+				<li class="item1">
+					<a href="./index.html">
+						<img src="./image/logo.png" alt="" id="logo">
+					</a>
+				</li>
+
+				<li class="item1">
+					<a href="./index.html">
+						<i class="iconfont icon-shouye"></i>首页
+					</a>
+				</li>
+
+				<li class="item1">
+					<a href="./category.html">
+						<i class="iconfont icon-bijiben1"></i>开发记录
+					</a>
+				</li>
+
+				<li class="item1">
+					<a href="./index.html">
+						<i class="iconfont icon-yuandaima"></i>大前端
+					</a>
+
+					<!-- 二级导航 -->
+					<ul class="two" style="display: none;">
+						<li>
+							<a href="javascript:;">HTML5</a>
+						</li>
+
+						<li>
+							<a href="javascript:;">CSS3</a>
+						</li>
+
+						<li>
+							<a href="javascript:;">JavaScript</a>
+						</li>
+					</ul>
+				</li>
+
+				<li class="item1">
+					<a href="./index.html">
+						<i class="iconfont icon-zuzhijiagou1"></i>框架
+					</a>
+
+					<!-- 二级导航 -->
+					<ul class="two" style="display: none;">
+						<li>
+							<a href="javascript:;">Vue</a>
+						</li>
+
+						<li>
+							<a href="javascript:;">React</a>
+						</li>
+
+						<li>
+							<a href="javascript:;">Angular</a>
+						</li>
+					</ul>
+				</li>
+
+				<li class="item1">
+					<a href="javascript:;">
+						<i class="iconfont icon-zhuti1"></i>扩展
+					</a>
+
+					<ul class="two" style="display: none;">
+						<li>
+							<a href="./links.html"><i class="iconfont icon-quanzi1"></i>人脉圈</a>
+						</li>
+
+						<li>
+							<a href="./circle.html"><i class="iconfont icon-pengyouquan1"></i>朋友圈</a>
+						</li>
+
+						<li>
+                            <a href="./bigData.html"><i class="iconfont icon-dashuju2"></i>大数据</a>
+                        </li>
+					</ul>
+				</li>
+
+				<!-- 功能栏 -->
+				<li class="function">
+					<ol>
+						<!-- 白天昼夜切换 -->
+						<li id="HighlightToggle">
+							<img src="./image/taiyang.png" alt="">
+						</li>
+
+						<li>
+							<a href="javascript:;">
+								<i class="iconfont icon-sousuo1"></i>
+							</a>
+						</li>
+					</ol>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- 移动端的侧边导航栏 -->
+	<div class="mNav">
+		<!-- 头像 -->
+		<div class="user">
+			<img src="./image/user.png" alt="">
+			<span>Yuexing</span>
+			<p>不断改善成为最佳!</p>
+		</div>
+
+		<!-- 导航栏 -->
+		<ul>
+			<li class="item">
+				<a href="./index.html">
+					<i class="iconfont icon-shouye"></i>首页
+				</a>
+			</li>
+
+			<li class="item">
+				<a href="./category.html">
+					<i class="iconfont icon-bijiben1"></i>开发记录
+				</a>
+			</li>
+
+			<li class="item">
+				<a href="javascript:;" id="twoNav">
+					<i class="iconfont icon-yuandaima"></i>大前端
+				</a>
+
+				<!-- 二级导航 -->
+				<ul class="two">
+					<li>
+						<a href="javascript:;">HTML5</a>
+					</li>
+
+					<li>
+						<a href="javascript:;">CSS3</a>
+					</li>
+
+					<li>
+						<a href="javascript:;">JavaScript</a>
+					</li>
+				</ul>
+			</li>
+
+			<li class="item">
+				<a href="javascript:;" id="twoNav">
+					<i class="iconfont icon-zuzhijiagou1"></i>框架
+				</a>
+
+				<!-- 二级导航 -->
+				<ul class="two">
+					<li>
+						<a href="javascript:;">Vue</a>
+					</li>
+
+					<li>
+						<a href="javascript:;">React</a>
+					</li>
+
+					<li>
+						<a href="javascript:;">Angular</a>
+					</li>
+				</ul>
+			</li>
+
+			<li class="item">
+				<a href="javascript:;" id="twoNav">
+					<i class="iconfont icon-zhuti1"></i>扩展
+				</a>
+
+				<ul class="two">
+					<li>
+						<a href="./links.html">
+							<i class="iconfont icon-quanzi1"></i>人脉圈
+						</a>
+					</li>
+
+					<li>
+						<a href="./circle.html">
+							<i class="iconfont icon-pengyouquan1"></i>朋友圈
+						</a>
+					</li>
+
+					<li>
+						<a href="./bigData.html"><i class="iconfont icon-dashuju2"></i>大数据</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+	<!-- 遮罩层 -->
+	<div class="mask"></div>
+
+	<!-- 主体内容 -->
+	<div class="main">
+		<div class="w">
+			<!-- 文章列表 -->
+			<div class="list article_list">
+				<!-- 小圆点 -->
+				<div class="dots">
+					<ol>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ol>
+				</div>
+
+				<!-- 文章详情 -->
+				<div class="article">
+					<!-- 面包屑导航 -->
+					<div class="crumbs_Nav">
+						<span class="layui-breadcrumb">
+							<a href="javascript:;"><i class="iconfont icon-shouye"></i>首页</a>
+							<a href="javascript:;"><i class="iconfont icon-zhuti1" style="font-size: 13px;"></i>其他分类</a>
+							<a href="javascript:;"><i class="iconfont icon-yuandaima"></i>程序人生</a>
+							<a><cite style="font-style: normal;"><i class="iconfont icon-shouye1"></i>正文</cite></a>
+						</span>
+
+						<hr>
+					</div>
+
+					<!-- 文章内容 -->
+					<div class="article_Info">
+						<h1>大厂裁员下，程序员如何做“副业”？</h1>
+
+						<img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5e7d37251bc04bf48caafe62eae2991e~tplv-k3u1fbpfcp-zoom-crop-mark:1304:1304:1304:734.awebp?"
+							alt="">
+						<p>大家好，我是杨成功。</p><br>
+						<p>前几天有幸看了<i
+								class="s">尤雨溪</i>尤大的直播，他们谈到一个话题，是说目前前端人，或者是整个程序员群体如何做副业？近年来互联网行情下降，好多人都在思考要不要搞个副业来抵御风险。
+						</p><br>
+						<p>这不又来事了，这两天又爆了互联网大裁员。继阿里“向社会输送人才”之后，京东又搞了个“毕业礼”，整的小伙伴们人心惶惶。副业的关注度又一波升级。<br>
+						</p>
+						<p>那今天我们就来聊聊，程序员做副业这件事。</p><br>
+						<h2>为什么程序员都想着做副业？</h2>
+						<p>我理解今天的程序员为什么都有做副业的想法，原因不外乎两个方面。</p><br>
+						<p>一是互联网的爆发期已过，以前程序员体量小，会点基本技能就可以不愁工作，薪资也非常可观，但现在随着大量人员涌入，各种名校高学历的加入内卷，我们突然发现没什么竞争优势了。</p><br>
+						<p>二是互联网开发圈这种畸形的工作氛围，熬夜加班过于严重，消耗生命力来赶进度。特别是大厂，钱是给的多，但是透支强度懂得都懂，说句不好听的是拿命换钱。
+						</p><br>
+						<p>以前大家听这些可能只是自嘲一下，随着脉脉上不断爆出大厂程序员加班猝死的消息，大家开始慌了，原来比起收入，健康才是我们终身的财富。
+						</p><br>
+						<p>当然还有一个原因，不只是程序员的职业阴霾，但程序员首当其冲，那就是 <i class="s">“35 岁危机”</i>。</p><br>
+						<p>程序员是拼学习能力和创造能力的职业，不进则退的规则远大于其他行业。35 以后，如果你不是真的热爱这个行业，那么你会发现，20
+							多岁的那种学习钻研的毅力已经没有了。再加上身体状况大不如前，加班扛不动，各方面你怎么和新来的小伙子们拼？</p><br>
+						<p>以上的种种情况，再加上网络上疯狂的制造焦虑，我们自己也突然有了种随时会降薪，随时会被裁，随时要加入内卷，甚至随时会没命的担忧，开始想后路了。不行搞点副业？不行创个业？</p><br>
+						<p>所以如果你今天在技术社区发一篇“程序员如何搞副业”的文章，点击率一定翻倍。根本原因，就是大家对未来的担忧。</p><br>
+						<p>卷不动怎么办？遇到 35 岁危机怎么办？大家都想着规避风险，这才不得不去关注副业。</p><br>
+						<h2>怎么看 “加班内卷” 和 “35 岁危机”？</h2>
+						<p>这两个现象是程序员焦虑的主要来源，看似避无可避，可有没有想过根本原因是什么？</p><br>
+						<p>我们再往深剖一下这两个问题，其实大家担心的是：“如果这种加班状态持续到 35 岁，我能不能撑得住？到时候竞争力下降，我会不会被新人替代？”</p><br>
+						<p class="p">但是我想说一个误区，就是初中级别的程序员，需要大量的写代码来提升自己的技术能力，不断的投入时间学习，研究，拓宽视野。但是到了高级别的程序员，比如带团队的
+							leader，架构师，写代码一定是越来越少的。</p><br>
+						<p>对于这些人来说，他们不需要通过加班来发挥价值，他们有自己的核心竞争力和不可替代性，写代码也是写一些核心的关键的代码，更多的时间关注技术选型和解决问题的方案。所以说程序员的职业生涯不会一直伴随着加班，当你拥有核心竞争力，你的工作方式反而会很自由。
+						</p><br>
+						<p>那什么是核心竞争力？我说一句话大家一定会有体会：你的技术 leader，一个决策可以让团队的开发效率提升 10 倍，也可能让团队的开发效率降低 10
+							倍，有可能最后还出不了成果，甚至告诉你这个不行得重来！</p><br>
+						<p>这就是核心竞争力呀！一个程序员对技术选型，解决方案的评估和判断，这才是他的核心竞争力。这种竞争力不是你刷一堆算法，背一堆八股文，学很多面试技巧，他就能有的。这些东西是需要你经过几年大量的
+							写代码+学习+尝试+思考 才能培养出的能力。</p><br>
+						<p>所以说，我们所谓的 “加班内卷” 和 “35 岁危机”，得分两个阶段来看。</p><br>
+
+						<h3>工作五年内</h3>
+						<p>如果你是工作的前五年，这个阶段你精力旺盛，学习能力强劲，那就是要卷的啊。趁着职业上升的黄金时期，花大量的时间和精力做积累，不断做加法，尽力尝试着去拓宽技术视野，让自己成为一个独当一面的人。这样你才能积累到别人无法超越的高度。
+						</p><br>
+						<p>如果这个阶段你躺平了，你想着反正大家都在卷，我不想参与其中，每天上班空闲摸个鱼也挺好的。那这样持续几年，除了业务代码熟练一些，你在技术深度广度上都没多大的长进。当你发现公司的新人越来越厉害，他们带来的技术让你应接不暇的时候，你突然发现卧槽，危机真的来了，这个时候再卷是不是晚了？
+						</p><br>
+						<p>我不是鼓励大家内卷，相反我很反对做那些没什么意义光是自我消耗的事情。但是努力和积累永远不是卷，更不是不想奋斗的借口。如果卷真的避免不了，那一定要“卷的有价值”。</p><br>
+						<p>比起内卷，其实我更鼓励大家“外卷”。外卷到意思就是当你在某个领域积累了一定经验后，要试着跳出当前的圈子，去探索一下外面的世界。</p><br>
+						<p class="p">比如你是一个前端程序员，尽管你的 Title
+							是“前端”，但你不能一直只在前端的圈子里打转。作为一个程序员，只要涉及到程序开发的，前端后端产品服务器，你都要接触，这样你的视野才会变的更广，看问题的角度更多，随之你的判断能力和才会得到提升。
+						</p><br>
+						<p>大家总觉得，一个前端就该专攻
+							js，只有准备向全栈发展才会接触后端。其实不是的，接触并不代表一定要做，了解整体可以培养你的全局观。比如你遇到了一个难题，你只会在前端的范畴研究，可能这个问题在后端处理只是一行代码的事情，可你不知道呀，所以会浪费很多时间。
+						</p><br>
+
+						<h2>代码片段</h2>
+						<div class="pre">
+							<!-- 代码高亮 -->
+							<pre style="margin:0;">
+									<b><code contenteditable="false" class="language-javascript" >
+ function unique(arr) {
+    if (!Array.isArray(arr)) {
+        console.log('type error!')
+        return
+    }
+    var array = [];
+    for (var i = 0; i < arr.length; i++) {
+        if (array .indexOf(arr[i]) === -1) {
+            array .push(arr[i])
+        }
+    }
+    return array;
+ }
+									</code></b>
+    							</pre>
+							<!-- 调用代码高亮 -->
+							<script>
+								hljs.initHighlightingOnLoad();
+							</script>
+						</div>
+					</div>
+
+					<!-- 点赞 / 收藏 -->
+					<!-- <div class="post_list">
+						<a href="javascript:;" class="post_list_Fabulous">
+							<i class="iconfont icon-dianzan"> 点赞</i>
+						</a>
+
+						<a href="javascript:;" class="post_list_Collection">
+							<i class="iconfont icon-aixin"> 收藏</i>
+						</a>
+
+						<a href="javascript:;" class="post_list_Poster">
+							<i class="iconfont icon-fenxiang"> 海报</i>
+						</a>
+					</div> -->
+
+					<!-- 标签栏 -->
+					<div class="article_Lable">
+						<!-- icon -->
+						<div class="article_Lable_Icon">
+							<i class="iconfont icon-tuya_huabanfuben"></i>
+						</div>
+
+
+						<a href="javascript:;">代码</a>
+						<a href="javascript:;">var</a>
+						<a href="javascript:;">字体</a>
+						<a href="javascript:;">function</a>
+						<a href="javascript:;">random</a>
+						<a href="javascript:;">math</a>
+						<a href="javascript:;">mode</a>
+						<a href="javascript:;">ler</a>
+						<a href="javascript:;">magiccolor</a>
+
+					</div>
+
+					<!-- 相关推荐 -->
+					<div class="part_mor">
+						<!-- 标题 -->
+						<div class="title">
+							<i class="iconfont icon-aixin1"></i>
+							<span>相关推荐</span>
+						</div>
+
+						<hr>
+
+						<!-- 内容 -->
+						<div class="box">
+							<div class="item">
+								<a href="javascript:;">
+									<img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5e7d37251bc04bf48caafe62eae2991e~tplv-k3u1fbpfcp-zoom-crop-mark:1304:1304:1304:734.awebp?"
+										alt="">
+									<span>大厂裁员下，程序员如何做“副业”？</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="javascript:;">
+									<img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a492eddea7c44d70be5429f50762a228~tplv-k3u1fbpfcp-zoom-crop-mark:1304:1304:1304:734.awebp?"
+										alt="">
+									<span>2022，前端的天🌦️要怎么变？</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="javascript:;">
+									<img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/11662ac0c4904deea3269e3ca70a6b06~tplv-k3u1fbpfcp-zoom-crop-mark:1304:1304:1304:734.awebp?"
+										alt="">
+									<span>什么？一道《数组去重》面试题竟然切屏34次！</span>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="javascript:;">
+									<img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/fe13aa9b39484dedb11826d77251ceb0~tplv-k3u1fbpfcp-zoom-crop-mark:1304:1304:1304:734.awebp?"
+										alt="">
+									<span>大菠萝？Pinia已经来了，再不学你就out了</span>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- 评论 -->
+					<div class="comment">
+						<!-- 标题 -->
+						<div class="title">
+							<i class="iconfont icon-pinglun"></i>
+							<span>评论</span>
+						</div>
+						<hr>
+
+						<!-- 表情包 -->
+						<div class="phiz">
+							<img class="tbbq" draggable="false" title="：滑稽：" num="0" src="./image/phiz/face_0.png">
+							<img class="tbbq" title="：喷：" num="1" src="./image/phiz/face_1.png">
+							<img class="tbbq" title="：喜欢：" num="2" src="./image/phiz/face_2.png">
+							<img class="tbbq" title="：阴险：" num="3" src="./image/phiz/face_3.png">
+							<img class="tbbq" title="：怒：" num="4" src="./image/phiz/face_4.png">
+							<img class="tbbq" title="：笑眼：" num="5" src="./image/phiz/face_5.png">
+							<img class="tbbq" title="：黑线：" num="6" src="./image/phiz/face_6.png">
+							<img class="tbbq" title="：鼓掌：" num="7" src="./image/phiz/face_7.png">
+							<img class="tbbq" title="：乖：" num="8" src="./image/phiz/face_8.png">
+							<img class="tbbq" title="：汗：" num="9" src="./image/phiz/face_9.png">
+							<img class="tbbq" title="：惊哭：" num="10" src="./image/phiz/face_10.png">
+							<img class="tbbq" title="：酷：" num="11" src="./image/phiz/face_11.png">
+							<img class="tbbq" title="：狂汗：" num="12" src="./image/phiz/face_12.png">
+							<img class="tbbq" title="：问号：" num="13" src="./image/phiz/face_13.png">
+							<img class="tbbq" title="：真棒：" num="14" src="./image/phiz/face_14.png">
+							<img class="tbbq" title="：不高兴：" num="15" src="./image/phiz/face_15.png">
+							<img class="tbbq" title="：大哭：" num="16" src="./image/phiz/face_16.png">
+							<img class="tbbq" title="：思考：" num="17" src="./image/phiz/face_17.png">
+						</div>
+
+						<!-- 评论区 -->
+						<div class="comment_box">
+							<textarea name="comment_box" placeholder="来发一针见血的评论吧!"></textarea>
+						</div>
+
+						<!-- 评论者信息 -->
+						<div class="comment_info">
+							<img src="./image/user.png" alt="">
+							<input type="text" placeholder="QQ号可获取头像和昵称">
+							<input type="text" placeholder="昵称*" disabled>
+							<a href="javascript:;">提交评论</a>
+						</div>
+
+						<!-- 华丽的分割线 -->
+						<div class="hr">
+							<div></div>
+							<!-- 评论区标题 -->
+							<div class="title_hr">
+								<i class="iconfont icon-pinglun"></i>
+								<span>评论区</span>
+							</div>
+						</div>
+
+						<!-- 评论内容 -->
+						<div class="comment_content">
+							<ul>
+								<li>
+									<!-- 评论者信息 -->
+									<div class="comment_user">
+										<img src="https://q2.qlogo.cn/headimg_dl?dst_uin=3311118881&spec=100" alt="">
+										<div>
+											<span>方法总比困难多</span>
+											<span>2022-06-06 15:28</span>
+										</div>
+									</div>
+
+									<!-- 评论内容 -->
+									<div class="comment_main">
+										半山腰的风景很美，然而我还是更想到山顶去看看！
+									</div>
+
+									<!-- 二级评论 -->
+									<div class="comment_user1">
+										<!-- 评论者信息 -->
+										<div class="comment_user">
+											<img src="https://q2.qlogo.cn/headimg_dl?dst_uin=528609062&spec=100" alt="">
+											<div>
+												<span>苏小晨</span>
+												<span>2022-06-11 15:28</span>
+											</div>
+										</div>
+
+										<!-- 评论内容 -->
+										<div class="comment_main">
+											<a href="javascript:;">@方法总比困难多</a>
+											<span>加油哦!</span>
+										</div>
+									</div>
+								</li>
+
+								<li>
+									<!-- 评论者信息 -->
+									<div class="comment_user">
+										<img src="https://q2.qlogo.cn/headimg_dl?dst_uin=3118614536&spec=100" alt="">
+										<div>
+											<span>鱼子酱</span>
+											<span>2022-06-06 15:28</span>
+										</div>
+									</div>
+
+									<!-- 评论内容 -->
+									<div class="comment_main">
+										生命不息，奋斗不止！只要相信，只要坚持，只要你真的是用生命在热爱，那一定是天赋使命使然，那就是一个人该坚持和努力的东西，无论梦想是什么，无论路有多曲折多遥远，只要是灵魂深处的热爱，就会一直坚持到走上属于自己的舞台！
+									</div>
+								</li>
+
+								<li>
+									<!-- 评论者信息 -->
+									<div class="comment_user">
+										<img src="https://q2.qlogo.cn/headimg_dl?dst_uin=2518848232&spec=100" alt="">
+										<div>
+											<span>为不凡突破极限</span>
+											<span>2022-06-09 11:25</span>
+										</div>
+									</div>
+
+									<!-- 评论内容 -->
+									<div class="comment_main">
+										前途未必光明坦荡，但一定充满渴望！
+									</div>
+								</li>
+
+								<li>
+									<!-- 评论者信息 -->
+									<div class="comment_user">
+										<img src="https://q2.qlogo.cn/headimg_dl?dst_uin=3311118881&spec=100" alt="">
+										<div>
+											<span>方法总比困难多</span>
+											<span>2022-06-06 15:28</span>
+										</div>
+									</div>
+
+									<!-- 评论内容 -->
+									<div class="comment_main">
+										半山腰的风景很美，然而我还是更想到山顶去看看！
+									</div>
+
+									<!-- 二级评论 -->
+									<div class="comment_user1">
+										<!-- 评论者信息 -->
+										<div class="comment_user">
+											<img src="https://q2.qlogo.cn/headimg_dl?dst_uin=528609062&spec=100" alt="">
+											<div>
+												<span>苏小晨</span>
+												<span>2022-06-11 15:28</span>
+											</div>
+										</div>
+
+										<!-- 评论内容 -->
+										<div class="comment_main">
+											<a href="javascript:;">@方法总比困难多</a>
+											<span>加油哦!</span>
+										</div>
+									</div>
+								</li>
+
+								<li>
+									<!-- 评论者信息 -->
+									<div class="comment_user">
+										<img src="https://q2.qlogo.cn/headimg_dl?dst_uin=3118614536&spec=100" alt="">
+										<div>
+											<span>鱼子酱</span>
+											<span>2022-06-06 15:28</span>
+										</div>
+									</div>
+
+									<!-- 评论内容 -->
+									<div class="comment_main">
+										生命不息，奋斗不止！只要相信，只要坚持，只要你真的是用生命在热爱，那一定是天赋使命使然，那就是一个人该坚持和努力的东西，无论梦想是什么，无论路有多曲折多遥远，只要是灵魂深处的热爱，就会一直坚持到走上属于自己的舞台！
+									</div>
+								</li>
+
+								<li>
+									<!-- 评论者信息 -->
+									<div class="comment_user">
+										<img src="https://q2.qlogo.cn/headimg_dl?dst_uin=2518848232&spec=100" alt="">
+										<div>
+											<span>为不凡突破极限</span>
+											<span>2022-06-09 11:25</span>
+										</div>
+									</div>
+
+									<!-- 评论内容 -->
+									<div class="comment_main">
+										前途未必光明坦荡，但一定充满渴望！
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<!-- 分页 -->
+						<div class="pagination">
+							<a href="javascript:;">‹‹</a>
+							<a href="javascript:;">‹</a>
+							<a href="javascript:;" class="paginationAction">1</a>
+							<a href="javascript:;">2</a>
+							<a href="javascript:;">3</a>
+							<a href="javascript:;">4</a>
+							<a href="javascript:;">5</a>
+							<a href="javascript:;">6</a>
+							<a href="javascript:;">››</a>
+						</div>
+
+						<!-- 加载列表 -->
+						<div class="loadList">
+							<i class="iconfont icon-loadm"></i>
+							<span>加载更多</span>
+						</div>
+					</div>
+
+					<!-- 占位 -->
+					<!-- <div class="occupy"></div> -->
+				</div>
+			</div>
+
+			<!-- 功能模块 -->
+			<div class="function">
+				<div class="sticky">
+					<!-- 作者详情 -->
+					<div class="author">
+						<!-- 背景图片 -->
+						<div class="author-bg">
+							<!-- 头像 -->
+							<div class="avatar">
+								<img src="./image/user.png" alt="">
+							</div>
+						</div>
+
+						<!-- 作者信息 -->
+						<div class="text">
+							<h4>
+								<a href="javascript:;">悦兴</a>
+								<div class="medal"></div>
+							</h4>
+							<p>也许，将会是最好用的博客管理系统</p>
+						</div>
+
+						<!-- 功能 -->
+						<div class="fun">
+							<!-- 发布文章 -->
+							<div class="login"><a href="javascript:;">登录</a></div>
+
+							<span></span>
+
+							<!-- 登录后台 -->
+							<div class="register"><a href="javascript:;">注册</a></div>
+						</div>
+					</div>
+
+					<!-- 随机文章 -->
+					<div class="containerA">
+						<!-- 标题 -->
+						<div class="title">
+							<h3><i class="iconfont icon-suijishushengcheng"></i> 随机文章</h3>
+							<!-- 小圆点 -->
+							<div class="dots">
+								<ol>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ol>
+							</div>
+						</div>
+
+						<!-- 随机文章 -->
+						<div class="random_Alist">
+							<ul>
+								<li>
+									<i class="iconfont icon-xiangyoujiantou"></i>
+									<a href="javascript:;">2022 年的 React 生态</a>
+								</li>
+
+								<li>
+									<i class="iconfont icon-xiangyoujiantou"></i>
+									<a href="javascript:;">字节跳动自研高性能微服务框架 Kitex 的演进之旅</a>
+								</li>
+
+								<li>
+									<i class="iconfont icon-xiangyoujiantou"></i>
+									<a href="javascript:;">两年前端，广州求职，要价 14k，依我说，小伙子可以多要点，涉及组件建设、工程化以及丰富的项目经验</a>
+								</li>
+
+								<li>
+									<i class="iconfont icon-xiangyoujiantou"></i>
+									<a href="javascript:;">解放双手！推荐一款阿里开源的低代码工具，YYDS！</a>
+								</li>
+
+								<li>
+									<i class="iconfont icon-xiangyoujiantou"></i>
+									<a href="javascript:;">Web3.0来了，花呗借呗前端团队开源的Web图形引擎会成为元宇宙的技术支撑吗？</a>
+								</li>
+
+								<li>
+									<i class="iconfont icon-xiangyoujiantou"></i>
+									<a href="javascript:;">超越 Nginx！号称下一代 Web 服务器，用起来够优雅！</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- 标签栏 -->
+					<div class="containerA">
+						<!-- 标题 -->
+						<div class="title">
+							<h3><i class="iconfont icon-tuya_huabanfuben"></i> 标签栏</h3>
+							<!-- 小圆点 -->
+							<div class="dots">
+								<ol>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ol>
+							</div>
+						</div>
+
+						<!-- 标签 -->
+						<div class="containerA_Tags">
+							<a href="javascript:;">HTML</a>
+							<a href="javascript:;">CSS</a>
+							<a href="javascript:;">Vue</a>
+							<a href="javascript:;">jQuery</a>
+							<a href="javascript:;">Vue</a>
+							<a href="javascript:;">React</a>
+							<a href="javascript:;">Angular</a>
+							<a href="javascript:;">less</a>
+							<a href="javascript:;">Node.js</a>
+							<a href="javascript:;">Bootstrap</a>
+							<a href="javascript:;">Element</a>
+							<a href="javascript:;">scss</a>
+							<a href="javascript:;">uni-app</a>
+							<a href="javascript:;">Foundation</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 友情链接 -->
+	<div class="links w">
+		<h3>
+			<i class="iconfont icon-lianjie"></i>
+			<span>友情链接</span>
+		</h3>
+
+		<ul>
+			<li>
+				<a href="https://github.com/">GitHub</a>
+			</li>
+			<li>
+				<a href="https://www.csdn.net/">CSDN</a>
+			</li>
+			<li>
+				<a href="https://juejin.cn/">掘金</a>
+			</li>
+			<li>
+				<a href="https://www.cnblogs.com/">博客园</a>
+			</li>
+			<li>
+				<a href="https://segmentfault.com/">思否</a>
+			</li>
+		</ul>
+	</div>
+
+	<!-- 底部 -->
+	<div class="footer">
+		<div class="w">
+			<!-- 站点信息 -->
+			<div class="Web_info">
+				<!-- 站点名称 -->
+				<div class="Web_name">
+					<h1><a href="javascript:;">Yuexing</a></h1>
+					<div class="dian"></div>
+				</div>
+
+				<!-- 站点描述 -->
+				<div class="Web_describe">
+					<p>© 2022 <a href="javascript:;">Yuexing</a> - 不断改善，成为最佳！</p>
+					<p>Constantly improve and become the best!</p>
+				</div>
+			</div>
+
+			<!-- ICP备案号 -->
+			<div class="ICP">
+				<a href="https://beian.miit.gov.cn/#/Integrated/index"><i
+						class="iconfont icon-icp-license"></i>豫ICP备2020031040号-1</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- 侧边工具栏 -->
+	<div class="tool">
+		<div class="item">
+			<a href="javascript:;">
+				<i class="iconfont icon-zhuti_yifu_o"></i>
+			</a>
+		</div>
+
+		<div class="item">
+			<a href="javascript:;" id="returnTop">
+				<i class="iconfont icon-fanhuidingbu1"></i>
+			</a>
+		</div>
+	</div>
+
+	<!-- 引入公共 JavaScript文件 -->
+	<script src="./js/public.js"></script>
+	<!-- 引入页面 JavaScript文件 -->
+	<script src="./js/article.js"></script>
+</body>
+
+</html>
