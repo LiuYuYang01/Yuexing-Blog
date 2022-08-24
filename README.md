@@ -1,5 +1,5 @@
 # Yuexing
-[![vg8c36.md.png](https://s1.ax1x.com/2022/08/24/vg8c36.md.png)](https://imgse.com/i/vg8c36)
+![](https://s1.ax1x.com/2022/08/24/vg8c36.png)
 
 Yuexing 是一款专注于程序员记录笔记的一个响应式博客开源项目。🎉
 
