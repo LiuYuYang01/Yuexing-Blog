@@ -1,3 +1,9 @@
+/*
+	author: '刘宇阳',
+	Gitee: 'https://gitee.com/liu_yu_yang666/yuexing',
+	describe: '等风来不如追风去，仰望光不如成为光！'
+*/
+
 // 朋友圈图片布局
 (function () {
     const listImg = document.querySelectorAll('.listImg');
@@ -25,8 +31,8 @@
     // 评论框
     const commentBox = document.querySelectorAll('.commentBox');
 
+    // 给所有朋友圈的评论框添加点击事件
     for (let i = 0; i < circleComment.length; i++) {
-        console.log(circleComment[i]);
         circleComment[i].onclick = function () {
             // 如果隐藏就让他点击显示，反之点击隐藏评论框
             commentBox[i].style.display === '' || commentBox[i].style.display === 'none' ? commentBox[i].style.display = 'block' : commentBox[i].style.display = 'none';

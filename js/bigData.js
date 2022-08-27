@@ -1,3 +1,9 @@
+/*
+	author: '刘宇阳',
+	Gitee: 'https://gitee.com/liu_yu_yang666/yuexing',
+	describe: '等风来不如追风去，仰望光不如成为光！'
+*/
+
 (function () {
     const myChart = echarts.init(document.querySelector('.articleAnalysis'));
 

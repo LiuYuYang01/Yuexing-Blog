@@ -1,3 +1,9 @@
+/*
+	author: '刘宇阳',
+	Gitee: 'https://gitee.com/liu_yu_yang666/yuexing',
+	describe: '等风来不如追风去，仰望光不如成为光！'
+*/
+
 .main>.w>.list {
     overflow: visible !important;
     padding: 0 !important;
@@ -19,7 +25,7 @@
     border-radius: 3px;
     background-color: var(--Yuexing-bg) !important;
     box-shadow: 0 1px 3px rgb(26 26 26 / 20%) !important;
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 
 .main .circle .list .info {
@@ -42,7 +48,7 @@
 .main .circle .list>.title h3 {
     margin-left: 10px;
     color: var(--Yuexing-a);
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 
 /* 内容 */
@@ -55,7 +61,7 @@
     line-height: 1.6em;
     color: var(--Yuexing-article);
     font-size: 16px;
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 
 /* 图片 */
@@ -80,7 +86,7 @@
     font-size: 12px;
     font-family: "黑体";
     font-weight: 700;
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 
 /* 点赞 */
@@ -106,7 +112,7 @@
     padding: 5px;
     border: 1px solid transparent;
     border-radius: 3px;
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 
 .main .circle .list .comment:hover {

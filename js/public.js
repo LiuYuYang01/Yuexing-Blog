@@ -1,3 +1,9 @@
+/*
+	author: '刘宇阳',
+	Gitee: 'https://gitee.com/liu_yu_yang666/yuexing',
+	describe: '等风来不如追风去，仰望光不如成为光！'
+*/
+
 // 动态生成导航栏下拉箭头
 (function () {
     // 获取元素并转换为数组
@@ -392,7 +398,7 @@
                         commentTextarea:'#292929',
                         commentList:'#343637'
                     },
-                    author_bg: 'url(http://139.196.43.147/gallery/t015a66384456670422.jpg)'
+                    author_bg: 'url(./image/userBg2.jpg)'
                 }
 
                 // 持久化到本地存储
@@ -485,7 +491,7 @@
                         commentTextarea:'#f2f7ff',
                         commentList:'#fbfcfc'
                     },
-                    author_bg: 'url(http://139.196.43.147/gallery/2022-07-19-22-35.jpg)'
+                    author_bg: 'url(./image/userBg.jpg)'
                 }
 
                 localStorage.setItem("HighlightToggleObj", JSON.stringify(obj))
