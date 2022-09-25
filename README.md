@@ -1,6 +1,6 @@
 # Yuexing
 
-**项目预览：** [Yuexing - 不断改善，成为最佳🎉 (liuyuyang.net)](http://yuexing.liuyuyang.net/)
+**项目预览：** [http://yuexing.liuyuyang.net/](http://yuexing.liuyuyang.net/)
 
  **项目技术栈：** html + css + js 全部原生JS实现
 
