@@ -478,8 +478,6 @@
     }
 }
 
-
-
 /* 大于1120就隐藏移动端侧边导航 */
 @media screen and (min-width: 1120px) {
     .mNav {
@@ -491,5 +489,18 @@
 @media screen and (max-width:1457px) {
     .tool {
         display: none;
+    }
+}
+
+/* 评论按钮 */
+@media screen and (max-width: 1260px) {
+    .article .comment .comment_info a {
+        margin: 0 !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .article .comment .comment_info a {
+        margin: 10px 0 0 55px !important;
     }
 }

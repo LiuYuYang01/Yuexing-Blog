@@ -1,0 +1,146 @@
+/*
+	author: '刘宇阳',
+	Gitee: 'https://gitee.com/liu_yu_yang666/yuexing',
+	describe: '等风来不如追风去，仰望光不如成为光！'
+*/
+
+:root {
+    font-size: 20px;
+  }
+
+  h1.typing {
+    margin: 0;
+    padding: 0;
+    /* 必须是等宽字体 */
+    font-family: "黑体";
+    /* 由于是等宽字体，1ch 等于 任何数字、英文、符号的宽度 */
+    /* width: 1ch; */
+    position: relative;
+    /* overflow: hidden; */
+    /* animation: 1s typing forwards steps(13); */
+  }
+
+  h1.typing::after {
+    content: "";
+    display: inline;
+    position: absolute;
+    width: 2px;
+    height: 2ch;
+    background-color: #fff;
+    border-radius: 2px;
+    right: -0.5ch;
+  }
+
+  h1.typing.ended::after {
+    animation: 1.1s cursor steps(2, jump-none) infinite;
+  }
+
+  h1.typing span {
+    --delay: 10s;
+    display: inline-block;
+    overflow: hidden;
+    width: 0ch;
+    animation: 0.1s text-in ease-in-out forwards;
+    /* animation: 0.1s text-out ease-in-out forwards; */
+    animation-delay: var(--delay);
+  }
+
+  @keyframes text-in {
+    from {
+      width: 0ch;
+    }
+
+    to {
+      width: 2ch;
+    }
+  }
+
+  @keyframes text-out {
+    from {
+      width: 2ch;
+    }
+
+    to {
+      width: 0ch;
+    }
+  }
+
+  @keyframes cursor {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+
+
+
+  /* 焦点图 */
+.banner {
+    position: relative;
+    height: 500px;
+    background: url(../image/t01d6f5fd3610da0a08.jpg) no-repeat center;
+    background-size: cover;
+}
+
+/* 渐变效果 */
+.banner::after {
+    content: "";
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to top, rgba(var(--Yuexing-banner-linear)), transparent);
+}
+
+.banner .cate_info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    animation: bannerMove 0.6s  forwards;
+}
+
+.banner .cate_info .cate i,
+.banner .cate_info .cate span {
+    font-size: 50px;
+    text-shadow: 2px 2px 5px #333;
+}
+
+.banner .cate_info h1{
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-family: "黑体";
+}
+
+.banner .cate_info h1.typing{
+  font-size: 20px;
+}
+
+/* 响应式 */
+@media screen and (max-width: 1120px) {
+  .banner .cate_info h1{
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .banner .cate_info h1{
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .banner .cate_info h1.typing{
+    font-size: 15px;
+  }
+}
+
+.main .article_Info a{
+  font-size: 15px !important;
+}

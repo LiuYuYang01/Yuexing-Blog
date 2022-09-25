@@ -15,7 +15,7 @@
 ::-webkit-scrollbar-thumb {
     border-radius: 7px;
     background-color: var(--Yuexing-color);
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 
 ::-webkit-scrollbar-track {
@@ -142,7 +142,7 @@ body {
 body {
     color: #333;
     background-color: var(--Yuexing-body-bg);
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 
 * {
@@ -165,7 +165,7 @@ div {
 /* 给所有a设置鼠标经过样式 */
 a {
     font-size: 14px;
-    transition: all 0.5s;
+    transition: all 0.3s;
     text-decoration: none;
     color: #333;
 }
