@@ -3,9 +3,8 @@
 **项目预览：** [http://yuexing.liuyuyang.net/](http://yuexing.liuyuyang.net/)
 
  **项目技术栈：** html + css + js 全部原生JS实现
-
-![项目演示](预览图.png)
-[![xEKk4I.png](https://s1.ax1x.com/2023/03/28/pp6mrIs.jpg)]([https://imgse.com/i/xEKk4I](https://s1.ax1x.com/2023/03/28/pp6mrIs.jpg))
+ 
+[![https://s1.ax1x.com/2023/03/28/pp6mrIs.jpg](https://s1.ax1x.com/2023/03/28/pp6mrIs.jpg)]([https://imgse.com/i/xEKk4I](https://s1.ax1x.com/2023/03/28/pp6mrIs.jpg))
 
 Yuexing 是一款专注于程序员记录笔记的一个响应式博客开源项目。🎉
 
