@@ -66,3 +66,5 @@ Yuexing Blog 1.0
 │
 └─bigData.html 大数据
 ```
+
+[![Page Views Count](https://badges.toozhao.com/badges/01GWS01CB843R6NC7JPN10TT2N/green.svg)](https://badges.toozhao.com/stats/01GWS01CB843R6NC7JPN10TT2N "Get your own page views count badge on badges.toozhao.com")
